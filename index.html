@@ -1,137 +1,162 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ارزانسرای حس خوب زندگی — راهنمای خرید هوشمند</title>
-    <style>
-        body {
-            font-family: 'Tahoma', 'Arial', sans-serif;
-            direction: rtl;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background: linear-gradient(to right, #4a7f2e, #66bb6a);
-            color: white;
-            padding: 25px 20px;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        .container {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 0 15px;
-        }
-        .intro {
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 25px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            font-size: 16px;
-            text-align: center;
-        }
-        .post {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        }
-        .post h2 {
-            margin-top: 0;
-            color: #2e7d32;
-            border-bottom: 2px solid #e0f5e0;
-            padding-bottom: 8px;
-        }
-        .highlight {
-            color: #1b5e20;
-            font-weight: bold;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 15px;
-            margin-top: 30px;
-            border-top: 4px solid #66bb6a;
-        }
-        footer a {
-            color: #a5d6a7;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 600px) {
-            header {
-                padding: 20px 15px;
-            }
-            h1 { font-size: 22px; }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ارزانسرای حس خوب زندگی</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Vazirmatn', Tahoma, Arial, sans-serif;
+      background: #fafafa;
+      color: #222;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #2e7d32, #66bb6a);
+      color: white;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+    }
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+    }
+    .intro {
+      text-align: center;
+      padding: 1.5rem;
+      background: white;
+      margin: -1rem 1rem 2rem;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      border: 1px solid #eee;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      border: 1px solid #f0f0f0;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    }
+    .card h2 {
+      color: #2e7d32;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+    .card ul {
+      padding-right: 1rem;
+    }
+    .card li {
+      margin-bottom: 0.6rem;
+      position: relative;
+      padding-right: 1.2rem;
+    }
+    .card li:before {
+      content: "✓";
+      color: #66bb6a;
+      font-weight: bold;
+      position: absolute;
+      right: 0;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem 2.5rem;
+      color: #555;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    footer a {
+      color: #2e7d32;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+      .card { padding: 1.2rem; }
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>ارزانسرای حس خوب زندگی — راهنمای خرید هوشمند در ایران</h1>
-    </header>
+  <header>
+    <h1>ارزانسرای حس خوب زندگی — راهنمای خرید هوشمند در ایران</h1>
+  </header>
 
-    <div class="container">
-        <div class="intro">
-            درود! ما اینجا برای کمک به شما در خرید هوشمند از <span class="highlight">دیجی‌کالا</span>، <span class="highlight">اسنپ‌شاپ</span>، <span class="highlight">اسنپ‌مارکت</span>، <span class="highlight">خودرو ۴۵</span> و <span class="highlight">ایسمینار</span> هستیم.
-        </div>
-
-        <div class="post">
-            <h2>📱 راهنمای خرید هوشمند موبایل و لپ‌تاپ</h2>
-            <p>قبل از خرید از <strong>دیجی‌کالا</strong>، به این نکات توجه کنید:</p>
-            <ul>
-                <li>گارانتی اصل و معتبر باشه</li>
-                <li>نظرات کاربران واقعی رو بخوانید</li>
-                <li>از مقایسه قیمت در دسته‌بندی استفاده کنید</li>
-                <li>تخفیف‌های ویژه دیجی‌کالا رو از دست ندید!</li>
-            </ul>
-        </div>
-
-        <div class="post">
-            <h2>🛒 نکات خرید از اسنپ‌شاپ و اسنپ‌مارکت</h2>
-            <p>برای خرید امن و هوشمند از <strong>اسنپ‌شاپ</strong> و <strong>اسنپ‌مارکت</strong>:</p>
-            <ul>
-                <li>رتبه فروشنده را بررسی کنید</li>
-                <li>تاریخ ارسال و شرایط بازگشت کالا رو چک کنید</li>
-                <li>از کوپن‌های تخفیف استفاده کنید</li>
-            </ul>
-        </div>
-
-        <div class="post">
-            <h2>🚗 خرید خودرو از خودرو ۴۵</h2>
-            <p>راهنمای خرید امن خودرو:</p>
-            <ul>
-                <li>تاریخچه خودرو و کارکرد واقعی</li>
-                <li>اعتبار فروشنده یا نمایندگی</li>
-                <li>امکان بازدید حضوری قبل از پرداخت</li>
-            </ul>
-        </div>
-
-        <div class="post">
-            <h2>🎓 ثبت‌نام در دوره‌های ایسمینار</h2>
-            <p>قبل از خرید دوره آموزشی:</p>
-            <ul>
-                <li>مدرس و سابقه تحصیلی/کاری‌اش رو بررسی کنید</li>
-                <li>نظرات دانشجویان قبلی رو بخوانید</li>
-                <li>محتوای نمونه (Sample) رو حتماً ببینید</li>
-            </ul>
-        </div>
+  <div class="container">
+    <div class="intro">
+      درود! ما اینجا برای کمک به شما در خرید هوشمند از 
+      <strong>دیجی‌کالا</strong>، <strong>اسنپ‌شاپ</strong>، 
+      <strong>اسنپ‌مارکت</strong>، <strong>خودرو ۴۵</strong> و 
+      <strong>ایسمینار</strong> هستیم.
     </div>
 
-    <footer>
-        <p>🌐 این سایت توسط <strong>ارزانسرای حس خوب زندگی</strong> ایجاد شده — هدف ما کمک به خرید بهتر و هوشمندانه‌تر است.</p>
-        <p>📩 تماس با ما: <a href="mailto:arzansarahesekhubezendegi@gmail.com">arzansarahesekhubezendegi@gmail.com</a></p>
-    </footer>
+    <div class="card">
+      <h2>📱 راهنمای خرید هوشمند موبایل و لپ‌تاپ</h2>
+      <ul>
+        <li>گارانتی اصل و معتبر باشه</li>
+        <li>نظرات کاربران واقعی رو بخوانید</li>
+        <li>از مقایسه قیمت در دسته‌بندی استفاده کنید</li>
+        <li>تخفیف‌های ویژه دیجی‌کالا رو از دست ندید!</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🛒 نکات خرید از اسنپ‌شاپ و اسنپ‌مارکت</h2>
+      <ul>
+        <li>رتبه فروشنده را بررسی کنید</li>
+        <li>تاریخ ارسال و شرایط بازگشت کالا رو چک کنید</li>
+        <li>از کوپن‌های تخفیف استفاده کنید</li>
+        <li>از پرداخت امن استفاده کنید</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🚗 خرید خودرو از خودرو ۴۵</h2>
+      <ul>
+        <li>تاریخچه خودرو و کارکرد واقعی</li>
+        <li>اعتبار فروشنده یا نمایندگی</li>
+        <li>امکان بازدید حضوری قبل از پرداخت</li>
+        <li>مدارک خودرو را حتماً بررسی کنید</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🎓 ثبت‌نام در دوره‌های ایسمینار</h2>
+      <ul>
+        <li>مدرس و سابقه تحصیلی/کاری‌اش رو بررسی کنید</li>
+        <li>نظرات دانشجویان قبلی رو بخوانید</li>
+        <li>محتوای نمونه (Sample) رو حتماً ببینید</li>
+        <li>گارانتی بازگشت وجه وجود دارد؟</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>🌐 این سایت توسط <strong>ارزانسرای حس خوب زندگی</strong> ایجاد شده — هدف ما کمک به خرید بهتر و هوشمندانه‌تر است.</p>
+    <p>📩 تماس با ما: <a href="mailto:arzansarahesekhubezendegi@gmail.com">arzansarahesekhubezendegi@gmail.com</a></p>
+  </footer>
 
 </body>
 </html>
