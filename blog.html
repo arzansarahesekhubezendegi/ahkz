@@ -3,84 +3,177 @@
 <head>
 <meta charset="UTF-8">
 <title>مقالات خرید آنلاین | ارزان‌سرای حس خوب زندگی</title>
-
-<meta name="description" content="مقالات راهنمای خرید، بررسی دیجی‌کالا، اسنپ‌شاپ، اسنپ‌مارکت و مقایسه خرید آنلاین">
-
+<meta name="description" content="مقالات راهنمای خرید، بررسی دیجی‌کالا، اسنپ‌شاپ، اسنپ‌مارکت، خودرو۴۵ و ایسمینار، راهنمای خرید آنلاین و نکات کاربردی">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="assets/style.css">
+<style>
+/* طراحی مینیمال و کارت‌ها */
+body {
+  font-family: Tahoma, sans-serif;
+  background-color: #f2f2f2;
+  margin:0;
+  padding:0;
+  direction: rtl;
+}
+header {
+  background-color: #2ecc71;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #2ecc71;
+  font-weight: bold;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+.card h2 {
+  color: #27ae60;
+}
+.card p {
+  color: #555;
+  margin: 10px 0 20px 0;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #27ae60;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #2ecc71;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: #ddd;
+}
+footer span {
+  font-weight: bold;
+  color: #2ecc71;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>مقالات</h1>
+  <h1>ارزان‌سرای حس خوب زندگی</h1>
   <p>راهنمای خرید و بررسی سرویس‌های آنلاین</p>
 </header>
 
 <nav>
   <ul>
     <li><a href="index.html">خانه</a></li>
+    <li><a href="blog.html">مقالات</a></li>
+    <li><a href="mailto:arzansarahesekhubezendegi@gmail.com">ارتباط با ما</a></li>
   </ul>
 </nav>
 
 <div class="container">
 
-  <!-- 🔥 مقالات مهم -->
+  <!-- ۱. دیجی‌کالا یا اسنپ‌شاپ -->
   <div class="card">
     <h2>دیجی‌کالا یا اسنپ‌شاپ؟</h2>
     <p>مقایسه کامل برای انتخاب بهترین گزینه خرید آنلاین</p>
     <a class="btn" href="articles/digikala-vs-snapshop.html">مطالعه مقاله</a>
   </div>
 
+  <!-- ۲. اسنپ‌مارکت یا خرید حضوری -->
   <div class="card">
     <h2>اسنپ‌مارکت یا خرید حضوری؟</h2>
     <p>کدام روش برای خرید روزمره بهتر است؟</p>
     <a class="btn" href="articles/snapmarket-vs-traditional.html">مطالعه مقاله</a>
   </div>
 
-  <!-- دیجی‌کالا -->
+  <!-- ۳. راهنمای خرید از دیجی‌کالا -->
   <div class="card">
     <h2>راهنمای خرید از دیجی‌کالا</h2>
     <p>هرآنچه قبل از خرید از دیجی‌کالا باید بدانید</p>
     <a class="btn" href="articles/digikala-guide.html">مطالعه مقاله</a>
   </div>
 
+  <!-- ۴. دیجی‌کالا چگونه کار می‌کند؟ -->
   <div class="card">
     <h2>دیجی‌کالا چگونه کار می‌کند؟</h2>
     <p>بررسی مراحل خرید، ارسال و بازگشت کالا</p>
     <a class="btn" href="articles/how-digikala-works.html">مطالعه مقاله</a>
   </div>
 
+  <!-- ۵. مزایای خرید از دیجی‌کالا -->
   <div class="card">
     <h2>مزایای خرید از دیجی‌کالا</h2>
     <p>بررسی کامل نقاط قوت دیجی‌کالا</p>
     <a class="btn" href="articles/digikala-pros-cons.html">مطالعه مقاله</a>
   </div>
 
-  <!-- اسنپ‌شاپ -->
+  <!-- ۶. اسنپ‌شاپ چیست و چه امکاناتی دارد؟ -->
   <div class="card">
     <h2>اسنپ‌شاپ چیست و چه امکاناتی دارد؟</h2>
     <p>آشنایی کامل با خرید آنلاین اسنپ‌شاپ</p>
     <a class="btn" href="articles/snapshop-intro.html">مطالعه مقاله</a>
   </div>
 
+  <!-- ۷. خرید قسطی از اسنپ‌شاپ چگونه است؟ -->
   <div class="card">
     <h2>خرید قسطی از اسنپ‌شاپ چگونه است؟</h2>
     <p>شرایط و نکات مهم خرید قسطی</p>
     <a class="btn" href="articles/snapshop-installment.html">مطالعه مقاله</a>
   </div>
 
-  <!-- اسنپ‌مارکت -->
+  <!-- ۸. اسنپ‌مارکت چیست؟ -->
   <div class="card">
     <h2>اسنپ‌مارکت چیست؟</h2>
     <p>بررسی خرید سوپرمارکتی آنلاین</p>
     <a class="btn" href="articles/snapmarket-intro.html">مطالعه مقاله</a>
   </div>
 
+  <!-- ۹. مزایای خرید از اسنپ‌مارکت -->
   <div class="card">
     <h2>مزایای خرید از اسنپ‌مارکت</h2>
     <p>چرا اسنپ‌مارکت بسیار ارزش استفاده دارد؟</p>
     <a class="btn" href="articles/snapmarket-pros-cons.html">مطالعه مقاله</a>
+  </div>
+
+  <!-- ۱۰. معرفی خودرو۴۵ -->
+  <div class="card">
+    <h2>خودرو۴۵ چیست؟</h2>
+    <p>معرفی وب‌سایت خرید و فروش خودرو</p>
+    <a class="btn" href="articles/khodro45-intro.html">مطالعه مقاله</a>
+  </div>
+
+  <!-- ۱۱. معرفی ایسمینار -->
+  <div class="card">
+    <h2>ایسمینار چیست؟</h2>
+    <p>معرفی وبینار و آموزش آنلاین در ایران</p>
+    <a class="btn" href="articles/isminar-intro.html">مطالعه مقاله</a>
   </div>
 
 </div>
@@ -90,4 +183,4 @@
 </footer>
 
 </body>
-</html>
+      </html>
