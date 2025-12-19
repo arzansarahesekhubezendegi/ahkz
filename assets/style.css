@@ -30,18 +30,19 @@ header p {
 }
 
 /* ==========================
-   منوی اصلی
+   منوی اصلی - افقی
 ========================== */
 nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* لینک‌ها وسط صفحه */
     list-style: none;
     padding: 0;
     margin: 15px 0;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* اگر صفحه کوچک شد، خط بعدی */
+    flex-direction: row; /* همیشه افقی */
 }
 nav ul li {
-    margin: 0 15px;
+    margin: 0 15px; /* فاصله بین لینک‌ها */
 }
 nav ul li a {
     text-decoration: none;
@@ -130,10 +131,13 @@ footer span {
    ریسپانسیو
 ========================== */
 @media (max-width: 768px) {
+    /* لینک‌ها هنوز افقی باقی بمانند */
     nav ul {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     nav ul li {
-        margin: 10px 0;
+        margin: 5px 10px;
     }
-  }
+}
