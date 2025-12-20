@@ -1,11 +1,18 @@
+/* =========================
+   تنظیمات کلی
+========================= */
 body {
-    font-family: Tahoma, sans-serif;
-    background: #f2f2f2;
     margin: 0;
+    font-family: Tahoma, sans-serif;
     direction: rtl;
+    background-color: #f3f4f6;
     color: #333;
+    line-height: 1.9;
 }
 
+/* =========================
+   هدر
+========================= */
 header {
     background: #2ecc71;
     color: #fff;
@@ -15,7 +22,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 36px;
+    font-size: 34px;
 }
 
 header p {
@@ -23,54 +30,90 @@ header p {
     font-size: 18px;
 }
 
+/* =========================
+   منوی ناوبری (همیشه افقی)
+========================= */
+nav {
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
 nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    padding: 0;
-    margin: 15px 0;
+    padding: 12px 0;
+    margin: 0;
     flex-wrap: wrap;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 18px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #2ecc71;
     font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
 }
 
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
-
-.section-title {
-    text-align: center;
+nav ul li a:hover {
     color: #27ae60;
-    font-size: 28px;
-    margin-bottom: 25px;
 }
 
+/* =========================
+   کانتینر اصلی
+========================= */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 25px 20px;
+}
+
+/* =========================
+   عناوین
+========================= */
+h1, h2, h3 {
+    color: #27ae60;
+}
+
+h2 {
+    margin-top: 35px;
+}
+
+/* =========================
+   تصویر مقاله
+========================= */
+.article-image {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    display: block;
+    margin: 25px auto;
+    border-radius: 14px;
+}
+
+/* =========================
+   کارت‌ها (صفحه اصلی و بلاگ)
+========================= */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
 }
 
 .card {
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background: #ffffff;
+    border-radius: 16px;
     overflow: hidden;
-    transition: 0.3s;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
 }
 
 .card img {
@@ -79,40 +122,83 @@ nav ul li a {
     object-fit: cover;
 }
 
-.card h3, .card h2 {
-    color: #27ae60;
-    padding: 15px;
-    margin: 0;
+.card h2,
+.card h3 {
+    margin: 15px;
+    font-size: 18px;
 }
 
 .card p {
-    padding: 0 15px 15px;
+    margin: 0 15px 15px;
+    font-size: 14px;
     color: #555;
 }
 
+/* =========================
+   دکمه‌ها
+========================= */
 .btn {
     display: block;
-    margin: 15px;
-    text-align: center;
+    margin: 0 15px 20px;
     padding: 10px;
+    text-align: center;
     background: #27ae60;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 10px;
+    font-size: 14px;
+    transition: background 0.3s;
 }
 
 .btn:hover {
     background: #2ecc71;
 }
 
+/* =========================
+   فوتر
+========================= */
 footer {
-    background: #ddd;
+    background: #e5e7eb;
     text-align: center;
     padding: 20px;
-    margin-top: 30px;
+    margin-top: 40px;
+    font-size: 14px;
 }
 
 footer span {
     color: #27ae60;
     font-weight: bold;
-       }
+}
+
+/* =========================
+   لینک‌ها داخل متن
+========================= */
+a {
+    color: #27ae60;
+}
+
+a:hover {
+    color: #2ecc71;
+}
+
+/* =========================
+   موبایل (ریسپانسیو)
+========================= */
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    nav ul li {
+        margin: 0 12px;
+    }
+
+    .article-image {
+        max-width: 90%;
+    }
+    }
