@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset 
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- صفحه اصلی و بلاگ -->
   <url>
     <loc>https://arzansarahesekhubezendegi.github.io/ahkz/</loc>
     <priority>1.0</priority>
@@ -13,12 +13,11 @@
   </url>
 
   <!-- مقالات -->
-
   <url>
     <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/digikala-vs-snapshop.html</loc>
     <priority>0.8</priority>
   </url>
-
+  
   <url>
     <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/snapmarket-vs-traditional.html</loc>
     <priority>0.8</priority>
@@ -29,6 +28,134 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- بقیه مقاله‌ها را همین‌طور اضافه می‌کنی -->
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/digikala-guide.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/how-digikala-works.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/digikala-pros-cons.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/snapshop-intro.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/snapshop-installment.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/khodro45-intro.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/isminar-intro.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/budget-digital-products.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/busy-people-online-shopping.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/digikala-payment-safety.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/digikala-return-policy.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/digikala-vs-snapshop-apps.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/online-books-guide.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/online-clothes-guide.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/online-cosmetics-guide.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/online-grocery-shopping-benefits.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/online-home-appliances.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/online-shipping-saving.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/online-sports-equipment.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/phone-accessories-guide.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/snapmarket-discount-tips.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/snapmarket-fruits.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/snapmarket-points-guide.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/snapshop-coupons.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/snapshop-installment-tips.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://arzansarahesekhubezendegi.github.io/ahkz/articles/snapshop-order-tracking.html</loc>
+    <priority>0.8</priority>
+  </url>
 
 </urlset>
