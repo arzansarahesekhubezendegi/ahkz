@@ -1,90 +1,118 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-<title>ارزان‌سرای حس خوب زندگی | خرید آنلاین آسان</title>
+  <title>ارزان‌سرا — حس خوب زندگی</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="مقالات خرید اینترنتی، نقد و بررسی، مقایسه فروشگاه‌ها و راهنمای صرفه‌جویی.">
+  <link rel="stylesheet" href="css/style.css" />
 
-<link rel="stylesheet" href="assets/style.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #fafafa;
+      margin: 0;
+    }
 
+    header {
+      background: #ffffff;
+      padding: 14px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.05);
+    }
+
+    nav {
+      display: flex;
+      gap: 8px;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+
+    nav a {
+      white-space: nowrap;
+      padding: 8px 14px;
+      border-radius: 30px;
+      background: #f2f2f2;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      margin: auto;
+      padding: 14px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 8px 10px;
+      border-radius: 10px;
+      background: #1976d2;
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
-  <h1>ارزان‌سرای حس خوب زندگی</h1>
-  <p>راهنمای خرید آنلاین و انتخاب هوشمندانه</p>
+<header class="container">
+  <h1>ارزان‌سرا — حس خوب زندگی</h1>
+
+  <nav>
+    <a href="index.html">خانه</a>
+    <a href="blog.html">مقالات</a>
+    <a href="contact.html">ارتباط با ما</a>
+  </nav>
 </header>
 
-<nav>
-<ul>
-  <li><a class="active" href="index.html">خانه</a></li>
-  <li><a href="blog.html">مقالات</a></li>
-  <li><a href="mailto:arzansarahesekhubezendegi@gmail.com">ارتباط با ما</a></li>
-</ul>
-</nav>
+<main class="container">
 
-<div class="container">
+  <h2>آخرین مقالات</h2>
 
-  <h2 class="section-title">سرویس‌های محبوب</h2>
+  <section class="grid">
 
-  <div class="grid">
+    <!-- ——— کارت‌های قبلی شما ——— -->
 
-    <!-- دیجی‌کالا -->
+    <!-- 👇 کارت جدید: جانبی -->
     <div class="card">
-      <img src="assets/images/digikala.jpg" alt="دیجی‌کالا">
-      <h3>دیجی‌کالا</h3>
-      <p>بزرگ‌ترین فروشگاه اینترنتی ایران</p>
-      <a class="btn" href="articles/digikala-guide.html">مشاهده</a>
+      <img src="images/janebi-cover.jpg" alt="معرفی فروشگاه جانبی">
+      <h3>جانبی (Janebi) — معرفی فروشگاه</h3>
+      <p>
+        آشنایی سریع با فروشگاه جانبی و محصولات آن.
+      </p>
+      <a class="btn" href="articles/janebi.html">مشاهده</a>
     </div>
 
-    <!-- اسنپ‌شاپ -->
-    <div class="card">
-      <img src="assets/images/snapshop.jpg" alt="اسنپ‌شاپ">
-      <h3>اسنپ‌شاپ</h3>
-      <p>خرید آنلاین و قسطی آسان</p>
-      <a class="btn" href="articles/snapshop-intro.html">مشاهده</a>
-    </div>
+  </section>
 
-    <!-- اسنپ‌مارکت -->
-    <div class="card">
-      <img src="assets/images/snapmarket.jpg" alt="اسنپ‌مارکت">
-      <h3>اسنپ‌مارکت</h3>
-      <p>خرید سوپرمارکتی آنلاین</p>
-      <a class="btn" href="articles/snapmarket-intro.html">مشاهده</a>
-    </div>
+</main>
 
-    <!-- خودرو۴۵ -->
-    <div class="card">
-      <img src="assets/images/khodro45.jpg" alt="خودرو۴۵">
-      <h3>خودرو۴۵</h3>
-      <p>خرید و فروش خودرو آنلاین</p>
-      <a class="btn" href="articles/khodro45-intro.html">مشاهده</a>
-    </div>
-
-    <!-- ایسمینار -->
-    <div class="card">
-      <img src="assets/images/isminar.jpg" alt="ایسمینار">
-      <h3>ایسمینار</h3>
-      <p>وبینار و آموزش آنلاین</p>
-      <a class="btn" href="articles/isminar-intro.html">مشاهده</a>
-    </div>
-
-    <!-- ⭐️ جانبی (جدید) -->
-    <div class="card">
-      <img src="assets/images/janebi.jpg" alt="جانبی Janebi">
-      <h3>راهنمای خرید از جانبی</h3>
-      <p>بررسی قیمت‌ها، گارانتی و تجربه خرید</p>
-      <a class="btn" href="articles/janebi-guide.html">مشاهده</a>
-    </div>
-
-  </div>
-
-</div>
-
-<footer>
-  <p>© 2025 ارزان‌سرای حس خوب زندگی</p>
+<footer class="container">
+  <p>© ارزان‌سرا — حس خوب زندگی</p>
 </footer>
 
 </body>
