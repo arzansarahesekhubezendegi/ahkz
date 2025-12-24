@@ -34,7 +34,7 @@ nav ul {
   background: #157347;
   padding: 10px;
   margin: 0;
-  flex-wrap: wrap; /* برای موبایل */
+  flex-wrap: wrap;
 }
 
 nav ul li {
