@@ -10,6 +10,7 @@ body {
   color: #333;
   direction: rtl;
   text-align: right;
+  line-height: 1.9;
 }
 
 /* ===== HEADER ===== */
@@ -60,6 +61,8 @@ nav ul li a.active {
 /* ===== CONTAINER ===== */
 .container {
   padding: 20px;
+  max-width: 900px;
+  margin: auto;
 }
 
 .section-title {
@@ -117,17 +120,63 @@ footer {
   margin-top: 30px;
 }
 
-/* ===== تصاویر داخل مقالات ===== */
-.article img,
+/* ===== مقالات ===== */
+
+.article-content {
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.05);
+}
+
+/* تیترها */
+.article-content h2,
+.article-content h3,
+.article-content h4 {
+  margin: 18px 0 10px;
+  line-height: 1.6;
+}
+
+/* پاراگراف‌ها */
+.article-content p {
+  margin: 10px 0;
+  text-align: justify;
+}
+
+/* تصاویر داخل مقاله */
 .article-content img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   display: block;
-  margin: 12px auto;
+  margin: 18px auto;
+  border-radius: 12px;
+}
+
+/* اگر خواستی تصویر کوچکتر شود */
+.img-small {
+  max-width: 55%;
+}
+
+/* لینک‌ها داخل مقاله */
+.article-content a {
+  color: #1f9d55;
+  font-weight: 700;
+}
+
+/* بلوک نقل‌قول */
+.article-content blockquote {
+  background: #f2f2f2;
+  border-right: 4px solid #1f9d55;
+  padding: 12px;
   border-radius: 10px;
 }
 
-/* ===== واکنش‌گرا (موبایل) ===== */
+/* ترازبندی‌ها */
+.text-center { text-align: center; }
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+
+/* ===== واکنش‌گرا ===== */
 @media (max-width: 600px) {
 
   .main-header h1 {
@@ -138,11 +187,11 @@ footer {
     font-size: 15px;
   }
 
-  nav ul {
-    gap: 8px;
-  }
-
   .card img {
     height: 150px;
+  }
+
+  .article-content img {
+    max-width: 95%;
   }
 }
