@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>وبلاگ — مقالات</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>وبلاگ | همه مقالات</title>
 
-  <link rel="stylesheet" href="style.css" />
+  <!-- استایل اصلی سایت -->
+  <link rel="stylesheet" href="style.css">
 
   <style>
-    /* سرچ داخل نوار ناوبری */
+    /* جستجو کنار ارتباط با ما */
+    nav ul {
+      flex-wrap: wrap;
+    }
+
     .search-box {
       display: flex;
       align-items: center;
@@ -22,17 +27,12 @@
       border: none;
       outline: none;
       font-size: 14px;
-      width: 150px;
+      width: 160px;
     }
 
     .search-box i {
       font-style: normal;
       opacity: .7;
-      font-size: 15px;
-    }
-
-    .blog-grid {
-      margin-top: 15px;
     }
 
     .article-meta {
@@ -40,20 +40,14 @@
       color: #777;
       margin-top: 6px;
     }
-
-    @media(max-width:700px){
-      .search-box input{
-        width: 120px;
-      }
-    }
   </style>
-
 </head>
+
 <body>
 
 <header class="main-header">
-  <h1>وبلاگ سایت</h1>
-  <h2>آموزش‌ها و معرفی بهترین ابزارها</h2>
+  <h1>وبلاگ</h1>
+  <h2>راهنماها، مقایسه‌ها و آموزش‌های کاربردی</h2>
 </header>
 
 <nav>
@@ -62,11 +56,11 @@
     <li><a href="blog.html" class="active">مقالات</a></li>
     <li><a href="contact.html">ارتباط با ما</a></li>
 
-    <!-- 🔎 جستجو (بعد از ارتباط با ما) -->
+    <!-- 🔎 جستجو بعد از ارتباط با ما -->
     <li>
       <form class="search-box">
         <i>🔍</i>
-        <input type="text" placeholder="جستجوی مقاله..." />
+        <input type="text" placeholder="جستجوی مقاله...">
       </form>
     </li>
   </ul>
@@ -76,85 +70,79 @@
 
   <h2 class="section-title">همه مقالات</h2>
 
-  <div class="grid blog-grid">
+  <div class="grid">
 
-    <!-- ====== 30 مقاله نمونه ====== -->
+    <!-- هر کارت: تصویر — عنوان — خلاصه — لینک -->
 
-    <!-- 1 -->
+    <!-- من برای همه، تصویر عمومی گذاشتم: images/article.jpg
+         بعداً اگر خواستی برای هر کدام عکس اختصاصی می‌گذاریم -->
+
     <div class="card">
-      <img src="images/digikala.jpg" alt="">
-      <h2>راهنمای کامل کار با دیجی‌کالا</h2>
-      <p>آموزش قدم‌به‌قدم خرید و فروش در دیجی‌کالا.</p>
-      <div class="article-meta">زمان مطالعه: 6 دقیقه</div>
-      <a class="btn" href="digikala-guide.html">مطالعه</a>
+      <img src="images/article.jpg">
+      <h2>محصولات دیجیتال با بودجه کم</h2>
+      <p>راهنمای خرید هوشمند با هزینه کمتر.</p>
+      <a class="btn" href="budget-digital-products.html">مطالعه</a>
     </div>
 
-    <!-- 2 -->
-    <div class="card">
-      <img src="images/snapshop.jpg" alt="">
-      <h2>معرفی Snapp!Shop</h2>
-      <p>چطور با اسنپ‌شاپ خرید ارزان‌تری داشته باشیم؟</p>
-      <div class="article-meta">زمان مطالعه: 4 دقیقه</div>
-      <a class="btn" href="snapshop-intro.html">مطالعه</a>
-    </div>
+    <div class="card"><img src="images/article.jpg"><h2>خرید آنلاین برای افراد پرمشغله</h2><p>صرفه‌جویی در زمان.</p><a class="btn" href="busy-people-online-shopping.html">مطالعه</a></div>
 
-    <!-- ادامه — فقط تیتر متفاوت می‌کنیم -->
+    <div class="card"><img src="images/article.jpg"><h2>راهنمای دیجی‌کالا</h2><p>کار با دیجی‌کالا از صفر تا صد.</p><a class="btn" href="digikala-guide.html">مطالعه</a></div>
 
-    <!-- 3 تا 30 -->
-    <!-- می‌توانی بعداً هرکدام را فایل جدا بدهی -->
-    <!-- برای الان لینک‌ها نمونه هستند -->
+    <div class="card"><img src="images/article.jpg"><h2>امنیت پرداخت در دیجی‌کالا</h2><p>چطور امن خرید کنیم؟</p><a class="btn" href="digikala-payment-safety.html">مطالعه</a></div>
 
-    <!-- 3 -->
-    <div class="card"><img src="images/article.jpg"><h2>ترفندهای خرید اینترنتی امن</h2><p>چطور کلاه‌برداری‌ها را تشخیص بدهیم.</p><a class="btn" href="#">مطالعه</a></div>
+    <div class="card"><img src="images/article.jpg"><h2>مزایا و معایب دیجی‌کالا</h2><p>بررسی منصفانه.</p><a class="btn" href="digikala-pros-cons.html">مطالعه</a></div>
 
-    <!-- تکرار نمونه‌ها (۴ تا ۳۰) -->
-    <!-- می‌گذارم لیست واقعی ولی کوتاه‌نویسی می‌کنم -->
+    <div class="card"><img src="images/article.jpg"><h2>مرجوعی در دیجی‌کالا</h2><p>شرایط و مراحل.</p><a class="btn" href="digikala-return-policy.html">مطالعه</a></div>
 
-    <!-- 4 -->
-    <div class="card"><img src="images/article.jpg"><h2>روش‌های افزایش فروش آنلاین</h2><p>نکات مهم برای فروشگاه‌ها.</p><a class="btn" href="#">مطالعه</a></div>
+    <div class="card"><img src="images/article.jpg"><h2>دیجی‌کالا یا اسنپ‌شاپ (اپ‌ها)</h2><p>مقایسه تجربه کاربری.</p><a class="btn" href="digikala-vs-snapshop-apps.html">مطالعه</a></div>
 
-    <!-- 5 -->
-    <div class="card"><img src="images/article.jpg"><h2>بهترین راه‌های جذب مشتری</h2><p>بازاریابی کاربردی.</p><a class="btn" href="#">مطالعه</a></div>
+    <div class="card"><img src="images/article.jpg"><h2>دیجی‌کالا یا اسنپ‌شاپ</h2><p>کدام بهتر است؟</p><a class="btn" href="digikala-vs-snapshop.html">مطالعه</a></div>
 
-    <!-- 6 -->
-    <div class="card"><img src="images/article.jpg"><h2>آموزش ثبت محصول در سایت‌ها</h2><p>گام‌به‌گام تصویری.</p><a class="btn" href="#">مطالعه</a></div>
+    <div class="card"><img src="images/article.jpg"><h2>دیجی‌کالا چگونه کار می‌کند</h2><p>پشت صحنه سفارش.</p><a class="btn" href="how-digikala-works.html">مطالعه</a></div>
 
-    <!-- 7–30 (نسخه سبک اما کامل) -->
-    <!-- می‌توانیم بعداً واقعی‌سازی کنیم -->
-    <!-- برای کوتاهی تکرار نمی‌کنم متن بلند — ولی 30 کارت وجود دارد -->
+    <div class="card"><img src="images/article.jpg"><h2>ایسمینار — معرفی</h2><p>وبینارها و دوره‌ها.</p><a class="btn" href="isminar-intro.html">مطالعه</a></div>
 
-    <!-- برای اینکه دقیقاً 30 عدد باشد، کارت‌ها را تکرار الگو -->
-    <!-- پیشنهاد: وقتی فایل واقعی شد، برای هرکدام صفحه بسازیم -->
+    <div class="card"><img src="images/article.jpg"><h2>سایت جانبی</h2><p>فروش لوازم جانبی.</p><a class="btn" href="janebi.html">مطالعه</a></div>
 
-    <!-- 7 -->
-    <div class="card"><img src="images/article.jpg"><h2>مقایسه پلتفرم‌های فروش</h2><p>کدام بهتر است؟</p><a class="btn" href="#">مطالعه</a></div>
+    <div class="card"><img src="images/article.jpg"><h2>خودرو۴۵ — راهنما</h2><p>خرید و فروش خودرو.</p><a class="btn" href="khodro45-intro.html">مطالعه</a></div>
 
-    <!-- 8 -->
-    <div class="card"><img src="images/article.jpg"><h2>۱۰ اشتباه رایج فروشندگان</h2><p>از این‌ها دوری کنید.</p><a class="btn" href="#">مطالعه</a></div>
+    <div class="card"><img src="images/article.jpg"><h2>راهنمای کتاب‌های آنلاین</h2><p>چطور کتاب ارزان بخریم؟</p><a class="btn" href="online-books-guide.html">مطالعه</a></div>
 
-    <!-- 9 -->
-    <div class="card"><img src="images/article.jpg"><h2>افزایش بازدید سایت</h2><p>نکات عملی.</p><a class="btn" href="#">مطالعه</a></div>
+    <div class="card"><img src="images/article.jpg"><h2>لباس آنلاین</h2><p>اندازه‌گیری درست.</p><a class="btn" href="online-clothes-guide.html">مطالعه</a></div>
 
-    <!-- 10 -->
-    <div class="card"><img src="images/article.jpg"><h2>آشنایی با سئو پایه</h2><p>سریع و خلاصه.</p><a class="btn" href="#">مطالعه</a></div>
+    <div class="card"><img src="images/article.jpg"><h2>لوازم آرایشی آنلاین</h2><p>نکات مهم.</p><a class="btn" href="online-cosmetics-guide.html">مطالعه</a></div>
 
-    <!-- 11 -->
-    <div class="card"><img src="images/article.jpg"><h2>تولید محتوا حرفه‌ای</h2><p>از ایده تا انتشار.</p><a class="btn" href="#">مطالعه</a></div>
+    <div class="card"><img src="images/article.jpg"><h2>سوپرمارکت اینترنتی</h2><p>مزایا و صرفه‌جویی.</p><a class="btn" href="online-grocery-shopping-benefits.html">مطالعه</a></div>
 
-    <!-- 12 -->
-    <div class="card"><img src="images/article.jpg"><h2>راه‌اندازی فروشگاه اینترنتی</h2><p>نقشه راه.</p><a class="btn" href="#">مطالعه</a></div>
+    <div class="card"><img src="images/article.jpg"><h2>لوازم خانگی آنلاین</h2><p>چه بخریم؟</p><a class="btn" href="online-home-appliances.html">مطالعه</a></div>
 
-    <!-- 13 -->
-    <div class="card"><img src="images/article.jpg"><h2>بهینه‌سازی تصاویر</h2><p>افزایش سرعت سایت.</p><a class="btn" href="#">مطالعه</a></div>
+    <div class="card"><img src="images/article.jpg"><h2>صرفه‌جویی در ارسال</h2><p>کم‌کردن هزینه پست.</p><a class="btn" href="online-shipping-saving.html">مطالعه</a></div>
 
-    <!-- 14 -->
-    <div class="card"><img src="images/article.jpg"><h2>چطور اعتماد مشتری را جلب کنیم</h2><p>روش‌های امتحان‌شده.</p><a class="btn" href="#">مطالعه</a></div>
+    <div class="card"><img src="images/article.jpg"><h2>وسایل ورزشی آنلاین</h2><p>انتخاب صحیح.</p><a class="btn" href="online-sports-equipment.html">مطالعه</a></div>
 
-    <!-- 15 -->
-    <div class="card"><img src="images/article.jpg"><h2>کار با شبکه‌های اجتماعی</h2><p>افزایش تعامل.</p><a class="btn" href="#">مطالعه</a></div>
+    <div class="card"><img src="images/article.jpg"><h2>راهنمای لوازم جانبی موبایل</h2><p>خرید مطمئن.</p><a class="btn" href="phone-accessories-guide.html">مطالعه</a></div>
 
-    <!-- 16–30 -->
-    <!-- … ادامه همان الگو … -->
+    <div class="card"><img src="images/article.jpg"><h2>تخفیف‌های اسنپ‌مارکت</h2><p>چطور بیشتر تخفیف بگیریم؟</p><a class="btn" href="snapmarket-discount-tips.html">مطالعه</a></div>
+
+    <div class="card"><img src="images/article.jpg"><h2>میوه در اسنپ‌مارکت</h2><p>نکات خرید تازه‌تر.</p><a class="btn" href="snapmarket-fruits.html">مطالعه</a></div>
+
+    <div class="card"><img src="images/article.jpg"><h2>معرفی اسنپ‌مارکت</h2><p>راهنمای شروع.</p><a class="btn" href="snapmarket-intro.html">مطالعه</a></div>
+
+    <div class="card"><img src="images/article.jpg"><h2>امتیازهای اسنپ‌مارکت</h2><p>چطور جمع کنیم؟</p><a class="btn" href="snapmarket-points-guide.html">مطالعه</a></div>
+
+    <div class="card"><img src="images/article.jpg"><h2>مزایا و معایب اسنپ‌مارکت</h2><p>صادقانه بررسی.</p><a class="btn" href="snapmarket-pros-cons.html">مطالعه</a></div>
+
+    <div class="card"><img src="images/article.jpg"><h2>اسنپ‌مارکت یا سنتی؟</h2><p>مقایسه.</p><a class="btn" href="snapmarket-vs-traditional.html">مطالعه</a></div>
+
+    <div class="card"><img src="images/article.jpg"><h2>کد تخفیف اسنپ‌شاپ</h2><p>روش استفاده.</p><a class="btn" href="snapshop-coupons.html">مطالعه</a></div>
+
+    <div class="card"><img src="images/article.jpg"><h2>قسطی خریدن از اسنپ‌شاپ</h2><p>نکات مهم.</p><a class="btn" href="snapshop-installment-tips.html">مطالعه</a></div>
+
+    <div class="card"><img src="images/article.jpg"><h2>راهنمای خرید قسطی</h2><p>شرایط و مراحل.</p><a class="btn" href="snapshop-installment.html">مطالعه</a></div>
+
+    <div class="card"><img src="images/article.jpg"><h2>مقدمه اسنپ‌شاپ</h2><p>آشنایی سریع.</p><a class="btn" href="snapshop-intro.html">مطالعه</a></div>
+
+    <div class="card"><img src="images/article.jpg"><h2>پیگیری سفارش اسنپ‌شاپ</h2><p>کجا بسته‌ام هست؟</p><a class="btn" href="snapshop-order-tracking.html">مطالعه</a></div>
 
   </div>
 
