@@ -1,98 +1,119 @@
 /* ===== تنظیمات پایه ===== */
-* { box-sizing: border-box; }
+*{box-sizing:border-box}
 
-body {
-  font-family: sans-serif;
-  margin: 0;
-  background: #f6f6f6;
-  color: #333;
-  direction: rtl;
-  text-align: right;
-  line-height: 1.9;
+body{
+  font-family:sans-serif;
+  margin:0;
+  background:#f6f6f6;
+  color:#333;
+  direction:rtl;
+  text-align:right;
+  line-height:1.9;
 }
 
 /* HEADER */
-.main-header {
-  background: #1f9d55;
-  color: white;
-  text-align: center;
-  padding: 35px 15px;
+.main-header{
+  background:#1f9d55;
+  color:#fff;
+  text-align:center;
+  padding:35px 15px;
 }
 
 /* NAV */
-nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  background: #157347;
-  padding: 10px;
-  margin: 0;
-  gap: 15px;
+nav ul{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+  list-style:none;
+  background:#157347;
+  margin:0;
+  padding:10px;
 }
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 6px 10px;
-  border-radius: 6px;
-  font-weight: 600;
+nav ul li a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  padding:6px 10px;
+  border-radius:6px;
 }
 
-nav ul li a.active { background: rgba(255,255,255,.2); }
+nav ul li a.active{
+  background:rgba(255,255,255,.25);
+}
 
 /* SEARCH */
-.search-box {
-  display: flex;
-  align-items: center;
-  padding: 6px 10px;
-  background: #fff;
-  border-radius: 8px;
+.search-box{
+  display:flex;
+  align-items:center;
+  background:#fff;
+  border-radius:10px;
+  padding:4px 10px;
 }
-.search-box input {
-  border: none;
-  outline: none;
-  padding: 6px;
+
+.search-box input{
+  border:0;
+  outline:0;
 }
 
 /* CONTAINER */
-.container {
-  padding: 20px;
-  max-width: 1000px;
-  margin: auto;
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
 }
 
 /* GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
-  gap: 18px;
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+  gap:18px;
 }
 
-.card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,.08);
-  text-align: center;
+.card{
+  background:#fff;
+  border-radius:14px;
+  padding:14px;
+  box-shadow:0 4px 10px rgba(0,0,0,.08);
+  text-align:center;
 }
 
-.card img {
-  width: 100%;
-  height: 170px;
-  object-fit: cover;
-  border-radius: 10px;
+.card img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:10px;
 }
 
-/* مقالات داخل صفحات */
-.article-content img {
-  max-width: 80%;
-  height: auto;
-  display: block;
-  margin: 18px auto;
-  border-radius: 12px;
+.btn{
+  display:inline-block;
+  margin-top:10px;
+  background:#1f9d55;
+  color:#fff;
+  padding:8px 14px;
+  text-decoration:none;
+  border-radius:6px;
 }
 
-@media (max-width: 600px) {
-  .article-content img { max-width: 95%; }
+/* ARTICLE PAGES */
+.article-content img{
+  max-width:80%;
+  height:auto;
+  margin:15px auto;
+  display:block;
+  border-radius:12px;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+
+  .card img{
+    height:140px;
+  }
+
+  .article-content img{
+    max-width:95%;
+  }
 }
