@@ -8,14 +8,15 @@
 <link rel="stylesheet" href="assets/style.css?v=2">
 
 <style>
-/* ===== طراحی کارت مقاله ===== */
+/* ===== کارت مقاله ===== */
 .article-card {
   background:#fff;
   border-radius:12px;
   box-shadow:0 4px 10px rgba(0,0,0,.05);
-  padding:18px;
-  margin-bottom:20px;
+  overflow:hidden;
   transition: transform .2s ease, box-shadow .2s ease;
+  text-align:center;
+  margin-bottom:20px;
 }
 .article-card:hover {
   transform: translateY(-3px);
@@ -25,32 +26,26 @@
   width:100%;
   max-height:200px;
   object-fit:cover;
-  border-radius:12px;
-  margin-bottom:12px;
-}
-.article-card h2, .article-card h3 {
-  color:#0f172a; /* تیره */
-  margin:8px 0;
-}
-.article-card p {
-  text-align: justify;
-  color:#333;
-  margin:10px 0;
-}
-.model-link {
   display:block;
-  width:fit-content;
-  margin:10px auto;
-  text-align:center;
-  background:#fff; /* متن سفید داخل گرادیان کارت */
-  color:#fff;
+}
+.article-card h3 {
+  color:#0f172a;
+  margin:10px 0 5px;
+  font-size:18px;
+  font-weight:700;
+}
+.read-btn {
+  display:inline-block;
+  margin-bottom:15px;
   padding:10px 18px;
   border-radius:8px;
   text-decoration:none;
   font-weight:700;
+  color:#fff;
   background: linear-gradient(135deg, #38bdf8, #8b5cf6);
+  transition: all .2s ease;
 }
-.model-link:hover {
+.read-btn:hover {
   background: linear-gradient(135deg, #0ea5e9, #7c3aed);
 }
 
@@ -88,7 +83,7 @@ nav ul li a.active { background: rgba(255,255,255,.2); }
 .search-box input { border:none; outline:none; background:transparent; }
 
 /* ===== Container ===== */
-.container { max-width:900px; margin:20px auto; padding:0 15px; }
+.container { max-width:900px; margin:20px auto; padding:0 15px; display:grid; grid-template-columns: repeat(auto-fill,minmax(250px,1fr)); gap:20px; }
 
 /* ===== Footer ===== */
 footer { text-align:center; padding:15px; background:#eee; margin-top:30px; }
@@ -97,7 +92,6 @@ footer { text-align:center; padding:15px; background:#eee; margin-top:30px; }
 @media(max-width:600px){
   .main-header h1 { font-size:22px; }
   .main-header h2 { font-size:15px; }
-  .article-card img { max-width:100%; }
 }
 </style>
 </head>
@@ -129,16 +123,11 @@ footer { text-align:center; padding:15px; background:#eee; margin-top:30px; }
 </nav>
 
 <div class="container">
+  <!-- کارت مقاله -->
   <div class="article-card">
     <img src="assets/images/zljazab.jpg" alt="زیرلیوانی‌های جذاب">
-    <h2>خرید زیر لیوانی</h2>
     <h3>زیر لیوانی های جذاب</h3>
-    <p>
-      اگه دنبال خرید زیر لیوانی هستی خوب جایی آمدی.
-      ما برات از بهترین فروشگاه‌ها زیرلیوانی‌های جذاب و خوشگل را جدا کردیم.
-      میتونی از اینجا مدل های مختلف را ببینی:
-    </p>
-    <a class="model-link" href="https://publisher.affilio.ir//landings/019b6fd8-4cfd-7848-b100-63400dc1cb68" target="_blank" rel="nofollow noopener">دیدن مدل‌ها</a>
+    <a class="read-btn" href="articles/zljazab.html?v=2">مطالعه</a>
   </div>
 </div>
 
