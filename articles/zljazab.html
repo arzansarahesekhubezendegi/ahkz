@@ -9,11 +9,10 @@
 <meta name="description" content="خرید زیر لیوانی‌های جذاب از بهترین فروشگاه‌ها | ارزان‌سرای حس خوب زندگی">
 <link rel="canonical" href="https://arzansarahesekhubezendegi.github.io/ahkz/articles/zljazab.html">
 
-<!-- استایل اصلی سایت (با جلوگیری از کش) -->
 <link rel="stylesheet" href="../assets/style.css?v=2">
 
 <style>
-/* ——— دکمه دیدن مدل‌ها ——— */
+/* لینک وسط چین برای دیدن مدل‌ها */
 .model-link{
   display:block;
   width:fit-content;
@@ -31,15 +30,15 @@
   background:linear-gradient(135deg,#0ea5e9,#7c3aed);
 }
 
-/* ——— فقط این دو تیتر کمی روشن‌تر ——— */
+/* رنگ تیترها روشن‌تر با !important تا override شود */
 .article-content h2,
 .article-content h3{
-  color:#1e293b;   /* کمی روشن‌تر از #0f172a */
-  background:none;
-  -webkit-text-fill-color:initial;
+  color:#334155 !important;  /* تیره ولی کمی روشن‌تر از قبل */
+  background:none !important;
+  -webkit-text-fill-color: initial !important;
 }
 
-/* ——— هدر صفحه ——— */
+/* هدر صفحه */
 .main-header{
   background:linear-gradient(135deg,#7dd3fc,#60a5fa,#8b5cf6);
   color:#fff;
@@ -47,11 +46,11 @@
   padding:35px 15px;
 }
 
-/* ——— آیکن ذره‌بین شبیه SnappShop ——— */
-.search-box i{
-  display:flex;
+/* آیکن ذره‌بین شبیه SnappShop */
+.search-box i svg{
   width:18px;
   height:18px;
+  stroke:#4b5563;
 }
 </style>
 </head>
@@ -68,7 +67,6 @@
     <li><a href="../index.html">خانه</a></li>
     <li><a href="../blog.html" class="active">مقالات</a></li>
     <li><a href="mailto:arzansarahesekhubezendegi@gmail.com">ارتباط با ما</a></li>
-
     <li>
       <form class="search-box" onsubmit="return false;">
         <i>
@@ -78,11 +76,7 @@
           </svg>
         </i>
 
-        <input
-          type="text"
-          id="searchInput"
-          placeholder="جستجو در مقالات..."
-          onkeyup="searchArticles()">
+        <input type="text" id="searchInput" placeholder="جستجو در مقالات..." onkeyup="searchArticles()">
       </form>
     </li>
   </ul>
@@ -99,11 +93,10 @@
       میتونی از اینجا مدل های مختلف را ببینی:
     </p>
 
-    <a
-      class="model-link"
-      href="https://publisher.affilio.ir//landings/019b6fd8-4cfd-7848-b100-63400dc1cb68"
-      target="_blank"
-      rel="nofollow noopener">
+    <a class="model-link"
+       href="https://publisher.affilio.ir//landings/019b6fd8-4cfd-7848-b100-63400dc1cb68"
+       target="_blank"
+       rel="nofollow noopener">
       دیدن مدل‌ها
     </a>
   </div>
