@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>زیرلیوانی‌های جذاب</title>
+  <title>خرید زیر لیوانی — مدل‌های جذاب</title>
 
   <style>
     body {
       margin: 0;
       font-family: sans-serif;
-      background: #f7f7f7;
+      background: #f5f7fb;
       color: #222;
       line-height: 1.9;
     }
@@ -30,28 +30,28 @@
       font-size: .9rem;
       padding: .35rem .7rem;
       border: 1px solid rgba(255,255,255,.4);
-      border-radius: 8px;
+      border-radius: 10px;
     }
 
     main {
-      max-width: 880px;
+      max-width: 920px;
       margin: 1.4rem auto;
       background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 12px 24px rgba(0,0,0,.06);
-      padding: 1.3rem 1.3rem 2rem;
+      border-radius: 18px;
+      box-shadow: 0 14px 26px rgba(0,0,0,.05);
+      padding: 1.5rem 1.5rem 2rem;
     }
 
     h2 {
       color: #2563eb; /* آبی */
-      margin-top: .5rem;
-      font-size: 1.25rem;
+      margin-top: .4rem;
+      font-size: 1.35rem;
     }
 
     h3 {
-      color: #3b82f6; /* آبی روشن‌تر */
+      color: #3b82f6;
       margin-top: .6rem;
-      font-size: 1.05rem;
+      font-size: 1.1rem;
     }
 
     p {
@@ -59,22 +59,44 @@
       color: #444;
     }
 
-    .link-box {
-      margin-top: 1rem;
-      padding: .9rem;
-      border-radius: 12px;
-      background: #f1f5ff;
-      border: 1px solid #dbe6ff;
+    .shop-card {
+      margin-top: 1.4rem;
+      border: 1px solid #e5e9ff;
+      border-radius: 18px;
+      overflow: hidden;
+      background: #f9fbff;
+      box-shadow: 0 10px 20px rgba(0,0,0,.04);
     }
 
-    .fake-link {
+    .shop-card__image {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      background: #e8ecff;
+    }
+
+    .shop-card__content {
+      padding: 1.1rem 1.2rem 1.5rem;
+      text-align: center;
+    }
+
+    .cta-btn {
+      margin-top: .9rem;
       display: inline-block;
-      padding: .5rem .9rem;
-      border-radius: 10px;
+      padding: .65rem 1.4rem;
+      border-radius: 12px;
       background: #4f46e5;
       color: #fff;
       text-decoration: none;
-      font-size: .85rem;
+      font-size: .9rem;
+      font-weight: 600;
+      box-shadow: 0 10px 20px rgba(79,70,229,.25);
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 26px rgba(79,70,229,.32);
     }
   </style>
 </head>
@@ -82,7 +104,7 @@
 <body>
 
 <header>
-  <div>zljazab — زیرلیوانی‌های جذاب</div>
+  <div>زیرلیوانی‌های جذاب</div>
   <a href="blog.html">خانه</a>
 </header>
 
@@ -93,19 +115,25 @@
   <h3>زیر لیوانی های جذاب</h3>
 
   <p>
-    اگه دنبال خرید زیر لیوانی هستی خوب جایی آمدی — ما برات از بهترین فروشگاه‌ها
-    زیر لیوانی‌های جذاب و خوشگل را جدا کردیم. بیا ببین 👇
+    اگه دنبال خرید زیر لیوانی هستی، جای درستی اومدی — ما برات
+    از بهترین فروشگاه‌ها، زیرلیوانی‌های جذاب و خوشگل رو جدا کردیم 👇
   </p>
 
-  <div class="link-box">
-    <p>
-      میتونی از اینجا مدل های مختلف را ببینی:
-    </p>
+  <div class="shop-card">
+    <img class="shop-card__image" src="ahkz/assets/images/zljazab.jpg" alt="زیرلیوانی‌های جذاب">
 
-    <!-- فعلاً لینک خالی می‌مونه -->
-    <a class="fake-link" href="#">
-      ورود به مدل‌ها
-    </a>
+    <div class="shop-card__content">
+      <p>میتونی از اینجا مدل های مختلف را ببینی</p>
+
+      <a
+        class="cta-btn"
+        href="https://publisher.affilio.ir//landings/019b6fd8-4cfd-7848-b100-63400dc1cb68"
+        target="_blank"
+        rel="nofollow noopener"
+      >
+        دیدن مدل‌ها
+      </a>
+    </div>
   </div>
 
 </main>
