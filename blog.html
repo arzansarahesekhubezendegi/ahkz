@@ -1,110 +1,63 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>همه مقالات | ارزان‌سرای حس خوب زندگی</title>
-<meta name="description" content="مرجع مقالات خرید آنلاین | دیجی‌کالا، اسنپ شاپ، اسنپ مارکت و آموزش‌های کاربردی">
-
-<link rel="canonical" href="https://arzansarahesekhubezendegi.github.io/ahkz/blog.html">
+<title>مقالات | ارزان‌سرای حس خوب زندگی</title>
+<meta name="description" content="مقاله‌های سایت ارزان‌سرای حس خوب زندگی">
 
 <link rel="stylesheet" href="assets/style.css">
 
 <style>
-nav ul {flex-wrap: wrap;gap:10px;align-items:center}
-
-.search-box{
-  display:flex;
-  align-items:center;
-  background:#fff;
-  border-radius:10px;
-  padding:6px 10px;
-}
-.search-box input{
-  border:none;
-  outline:none;
-  font-size:14px;
-  padding:4px 6px;
-}
-.search-box i{font-size:16px;color:#555}
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+  grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
   gap:18px;
   margin-top:20px;
 }
 .card img{
   width:100%;
-  height:160px;
-  object-fit:cover;
+  height:170px;
   border-radius:10px;
+  object-fit:cover;
 }
 </style>
-
 </head>
 
 <body>
 
 <header class="main-header">
   <h1>مقالات سایت</h1>
-  <h2>راهنمای خرید و انتخاب بهتر</h2>
+  <h2>راهنمای خرید بهتر</h2>
 </header>
 
 <nav>
 <ul>
-<li><a href="index.html">خانه</a></li>
-<li><a class="active" href="blog.html">مقالات</a></li>
-<li><a href="mailto:arzansarahesekhubezendegi@gmail.com">ارتباط با ما</a></li>
-
-<li>
-<form class="search-box">
-<i>🔍</i>
-<input id="searchInput" type="text" placeholder="جستجوی مقاله..." onkeyup="searchArticles()">
-</form>
-</li>
+  <li><a href="index.html">خانه</a></li>
+  <li><a class="active" href="blog.html">مقالات</a></li>
+  <li><a href="mailto:arzansarahesekhubezendegi@gmail.com">ارتباط با ما</a></li>
 </ul>
 </nav>
 
 <div class="container">
+  <h2 class="section-title">همین حالا بخوان</h2>
 
-<h2 class="section-title">همه مقالات</h2>
+  <div class="grid">
 
-<div id="articlesList" class="grid">
+    <div class="card">
+      <img src="assets/images/zljazab.jpg" alt="زیر لیوانی جذاب">
+      <h2>زیر لیوانی های جذاب</h2>
+      <p>بهترین و جذاب‌ترین زیرلیوانی‌ها که می‌تونی ببینی و انتخاب کنی</p>
+      <a class="btn" href="articles/zljazab.html">مطالعه</a>
+    </div>
 
-<!-- ——————— مقاله جدید همیشه بالای لیست ——————— -->
-<div class="card">
-<img src="assets/images/zljazab.jpg" alt="زیر لیوانی جذاب">
-<h2>زیر لیوانی های جذاب</h2>
-<a class="btn" href="articles/zljazab.html">مطالعه</a>
-</div>
-
-<!-- 👇 از اینجا به بعد — ۳۰ مقاله قبلی — دست نخورده -->
-<!-- فقط مسیر عکس‌ها به: assets/images/ اصلاح شده -->
-
-<div class="card"><img src="assets/images/budget-digital-products.jpg"><h2>خرید محصولات دیجیتال با بودجه محدود</h2><a class="btn" href="articles/budget-digital-products.html">مطالعه</a></div>
-
-<!-- بقیه ۳۰ مقاله همین الگو — (حذف نمی‌کنم) -->
-<!-- من فقط مسیر را اگر اشتباه باشد اصلاح می‌کنم -->
-
-</div>
+  </div>
 </div>
 
 <footer>
-<p>© 2025 ارزان‌سرای حس خوب زندگی</p>
+  © 2025 ارزان‌سرای حس خوب زندگی
 </footer>
-
-<script>
-function searchArticles(){
-  const input = document.getElementById("searchInput").value.toLowerCase();
-  const cards = document.querySelectorAll("#articlesList .card");
-
-  cards.forEach(card=>{
-    const text = card.innerText.toLowerCase();
-    card.style.display = text.includes(input) ? "block" : "none";
-  });
-}
-</script>
 
 </body>
 </html>
