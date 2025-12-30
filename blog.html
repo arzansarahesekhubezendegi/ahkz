@@ -3,54 +3,101 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>خرید زیر لیوانی | ارزان‌سرای حس خوب زندگی</title>
-<meta name="description" content="خرید زیر لیوانی‌های جذاب از بهترین فروشگاه‌ها | ارزان‌سرای حس خوب زندگی">
-<link rel="canonical" href="https://arzansarahesekhubezendegi.github.io/ahkz/articles/zljazab.html">
-
-<link rel="stylesheet" href="../assets/style.css?v=2">
+<title>مقالات | ارزان‌سرای حس خوب زندگی</title>
+<meta name="description" content="مقالات تخصصی خرید آنلاین از ارزان‌سرای حس خوب زندگی">
+<link rel="stylesheet" href="assets/style.css?v=2">
 
 <style>
-/* ——— دکمه دیدن مدل‌ها ——— */
-.model-link{
+/* ===== طراحی کارت مقاله ===== */
+.article-card {
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 4px 10px rgba(0,0,0,.05);
+  padding:18px;
+  margin-bottom:20px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.article-card:hover {
+  transform: translateY(-3px);
+  box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+.article-card img {
+  width:100%;
+  max-height:200px;
+  object-fit:cover;
+  border-radius:12px;
+  margin-bottom:12px;
+}
+.article-card h2, .article-card h3 {
+  color:#0f172a; /* تیره */
+  margin:8px 0;
+}
+.article-card p {
+  text-align: justify;
+  color:#333;
+  margin:10px 0;
+}
+.model-link {
   display:block;
   width:fit-content;
-  margin:20px auto;
+  margin:10px auto;
   text-align:center;
-  background:linear-gradient(135deg,#38bdf8,#8b5cf6);
-  color:#ffffff !important;
+  background:#fff; /* متن سفید داخل گرادیان کارت */
+  color:#fff;
   padding:10px 18px;
   border-radius:8px;
   text-decoration:none;
   font-weight:700;
-  transition:.2s;
+  background: linear-gradient(135deg, #38bdf8, #8b5cf6);
 }
-.model-link:hover{
-  background:linear-gradient(135deg,#0ea5e9,#7c3aed);
-  color:#ffffff !important;
-}
-
-/* ——— تیترهای H2 و H3 ——— */
-.article-content h2,
-.article-content h3{
-  color:#2563eb !important; /* آبی */
-  background:none !important;
-  -webkit-text-fill-color:initial !important;
+.model-link:hover {
+  background: linear-gradient(135deg, #0ea5e9, #7c3aed);
 }
 
-/* ——— هدر ——— */
-.main-header{
-  background:linear-gradient(135deg,#7dd3fc,#60a5fa,#8b5cf6);
-  color:#fff;
+/* ===== HEADER ===== */
+.main-header {
+  background: linear-gradient(135deg,#7dd3fc,#60a5fa,#8b5cf6);
+  color:white;
   text-align:center;
   padding:35px 15px;
 }
+.main-header h1 { margin:0; font-size:30px; font-weight:900; }
+.main-header h2 { margin-top:10px; font-size:18px; font-weight:700; opacity:.95; }
 
-/* ——— آیکن ذره‌بین شبیه SnappShop ——— */
-.search-box i svg{
-  width:18px;
-  height:18px;
-  stroke:#4b5563;
+/* ===== NAVBAR ===== */
+nav ul {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  list-style:none;
+  padding:10px;
+  margin:0;
+  gap:15px;
+  flex-wrap:wrap;
+}
+nav ul li a {
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  padding:6px 10px;
+  border-radius:6px;
+}
+nav ul li a.active { background: rgba(255,255,255,.2); }
+.top-nav a:hover { background:#e0f2fe; color:#0c4a6e; }
+.search-box { display:flex; align-items:center; gap:6px; padding:6px 10px; background:#f9fafb; border:1px solid #e5e7eb; border-radius:10px; }
+.search-box input { border:none; outline:none; background:transparent; }
+
+/* ===== Container ===== */
+.container { max-width:900px; margin:20px auto; padding:0 15px; }
+
+/* ===== Footer ===== */
+footer { text-align:center; padding:15px; background:#eee; margin-top:30px; }
+
+/* ===== واکنش‌گرا ===== */
+@media(max-width:600px){
+  .main-header h1 { font-size:22px; }
+  .main-header h2 { font-size:15px; }
+  .article-card img { max-width:100%; }
 }
 </style>
 </head>
@@ -64,15 +111,15 @@
 
 <nav class="top-nav">
   <ul>
-    <li><a href="../index.html">خانه</a></li>
-    <li><a href="../blog.html" class="active">مقالات</a></li>
+    <li><a href="index.html">خانه</a></li>
+    <li><a href="blog.html" class="active">مقالات</a></li>
     <li><a href="mailto:arzansarahesekhubezendegi@gmail.com">ارتباط با ما</a></li>
     <li>
       <form class="search-box" onsubmit="return false;">
         <i>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
             <path d="M21 21l-4.35-4.35m2.1-5.4a7.5 7.5 0 11-15 0 7.5 7.5 0 0115 0z"
-              fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </i>
         <input type="text" id="searchInput" placeholder="جستجو در مقالات..." onkeyup="searchArticles()">
@@ -82,19 +129,16 @@
 </nav>
 
 <div class="container">
-  <div class="article-content">
+  <div class="article-card">
+    <img src="assets/images/zljazab.jpg" alt="زیرلیوانی‌های جذاب">
     <h2>خرید زیر لیوانی</h2>
     <h3>زیر لیوانی های جذاب</h3>
     <p>
       اگه دنبال خرید زیر لیوانی هستی خوب جایی آمدی.
-      ما برات از بهترین فروشگاه‌ها زیر لیوانی‌های جذاب و خوشگل را جدا کردیم.
+      ما برات از بهترین فروشگاه‌ها زیرلیوانی‌های جذاب و خوشگل را جدا کردیم.
       میتونی از اینجا مدل های مختلف را ببینی:
     </p>
-    <a class="model-link"
-       href="https://publisher.affilio.ir//landings/019b6fd8-4cfd-7848-b100-63400dc1cb68"
-       target="_blank" rel="nofollow noopener">
-       دیدن مدل‌ها
-    </a>
+    <a class="model-link" href="https://publisher.affilio.ir//landings/019b6fd8-4cfd-7848-b100-63400dc1cb68" target="_blank" rel="nofollow noopener">دیدن مدل‌ها</a>
   </div>
 </div>
 
@@ -103,10 +147,10 @@
 </footer>
 
 <script>
-function searchArticles() {
+function searchArticles(){
   const input = document.getElementById("searchInput").value.toLowerCase();
-  const cards = document.querySelectorAll(".card");
-  cards.forEach(card => {
+  const cards = document.querySelectorAll(".article-card");
+  cards.forEach(card=>{
     const text = card.innerText.toLowerCase();
     card.style.display = text.includes(input) ? "block" : "none";
   });
