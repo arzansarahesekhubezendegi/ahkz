@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>خرید زیر لیوانی | ارزان‌سرای حس خوب زندگی</title>
-
 <meta name="description" content="خرید زیر لیوانی‌های جذاب از بهترین فروشگاه‌ها | ارزان‌سرای حس خوب زندگی">
+
 <link rel="canonical" href="https://arzansarahesekhubezendegi.github.io/ahkz/articles/zljazab.html">
 
-<!-- استایل اصلی سایت (با جلوگیری از کش) -->
+<!-- 👇 نسخه جدید -->
 <link rel="stylesheet" href="../assets/style.css?v=2">
 
 <style>
@@ -19,43 +19,70 @@
   width: fit-content;
   margin: 20px auto;
   text-align: center;
-  background: linear-gradient(135deg, #38bdf8, #8b5cf6);
+  background: linear-gradient(135deg, #3b82f6, #7c3aed);
   color: white;
   padding: 10px 18px;
-  border-radius: 8px;
+  border-radius: 10px;
   text-decoration: none;
-  font-weight: 700;
-  transition: all 0.2s ease;
+  font-weight: 800;
+  transition: all .25s ease;
 }
 .model-link:hover {
-  background: linear-gradient(135deg, #0ea5e9, #7c3aed);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12);
 }
 
-/* ===== گرادیان لوکس روی تیترها ===== */
-.article-content h2,
+/* ===== تیتر تیره‌تر و لوکس‌تر ===== */
+.article-content h2, 
 .article-content h3 {
-  background: linear-gradient(135deg, #38bdf8, #8b5cf6);
+  background: linear-gradient(135deg, #1e1b4b, #3b0764); /* تیره‌تر */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 900;
 }
 
-/* ===== تغییر رنگ هدر همین صفحه ===== */
+/* ===== هدر لوکس ===== */
 .main-header {
-  background: linear-gradient(135deg, #7dd3fc, #60a5fa, #8b5cf6);
+  background: linear-gradient(135deg, #1e3a8a, #4f46e5);
   color: white;
   text-align: center;
   padding: 35px 15px;
+}
+
+/* ===== سرچ شبیه Snappshop ===== */
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+}
+
+.search-box svg {
+  width: 18px;
+  height: 18px;
+  opacity: .7;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
 }
 </style>
 </head>
 
 <body>
 
+<!-- ===== HEADER ===== -->
 <header class="main-header">
   <h1>مقالات تخصصی خرید آنلاین</h1>
   <h2>ارزان‌سرای حس خوب زندگی</h2>
 </header>
 
+<!-- ===== NAVBAR ===== -->
 <nav class="top-nav">
   <ul>
     <li><a href="../index.html">خانه</a></li>
@@ -64,7 +91,12 @@
 
     <li>
       <form class="search-box" onsubmit="return false;">
-        <i>🔍</i>
+        <!-- 🔍 شبیه Snappshop (SVG) -->
+        <svg viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"></circle>
+          <line x1="16" y1="16" x2="21" y2="21" stroke="currentColor" stroke-width="2"></line>
+        </svg>
+
         <input
           type="text"
           id="searchInput"
@@ -75,35 +107,39 @@
   </ul>
 </nav>
 
+<!-- ===== ARTICLE ===== -->
 <div class="container">
   <div class="article-content">
+
     <h2>خرید زیر لیوانی</h2>
     <h3>زیر لیوانی های جذاب</h3>
 
     <p>
-      اگه دنبال خرید زیر لیوانی هستی خوب جایی آمدی.
-      ما برات از بهترین فروشگاه‌ها زیر لیوانی‌های جذاب و خوشگل را جدا کردیم.
-      میتونی از اینجا مدل های مختلف را ببینی:
+      اگه دنبال خرید زیر لیوانی هستی، جای درستی اومدی 😊  
+      اینجا بهترین مدل‌ها را از فروشگاه‌های معتبر جدا کردیم تا راحت انتخاب کنی:
     </p>
 
-    <a
-      class="model-link"
-      href="https://publisher.affilio.ir//landings/019b6fd8-4cfd-7848-b100-63400dc1cb68"
-      target="_blank"
-      rel="nofollow noopener">
+    <a class="model-link"
+       href="https://publisher.affilio.ir//landings/019b6fd8-4cfd-7848-b100-63400dc1cb68"
+       target="_blank"
+       rel="nofollow noopener">
       دیدن مدل‌ها
     </a>
+
   </div>
 </div>
 
+<!-- ===== FOOTER ===== -->
 <footer>
   &copy; 2025 ارزان‌سرای حس خوب زندگی
 </footer>
 
+<!-- ===== SEARCH SCRIPT ===== -->
 <script>
 function searchArticles() {
   const input = document.getElementById("searchInput").value.toLowerCase();
   const cards = document.querySelectorAll(".card");
+
   cards.forEach(card => {
     const text = card.innerText.toLowerCase();
     card.style.display = text.includes(input) ? "block" : "none";
