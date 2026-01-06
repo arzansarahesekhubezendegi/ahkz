@@ -12,52 +12,55 @@
 <link rel="stylesheet" href="../assets/style.css?v=2">
 
 <style>
-.model-link {
-  display: block;
-  width: fit-content;
-  margin: 20px auto;
-  text-align: center;
-  background: linear-gradient(135deg, #38bdf8, #8b5cf6);
-  color: #ffffff !important;
-  padding: 10px 18px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 700;
-  transition: .2s;
-}
-.model-link:hover {
-  background: linear-gradient(135deg, #0ea5e9, #7c3aed);
-  color: #ffffff !important;
-}
-
-.article-content img {
-  max-width: 450px;
+.article-hero {
   width: 100%;
-  border-radius: 14px;
+  max-width: 450px;
+  margin: 20px auto;
   display: block;
-  margin: 15px auto 25px;
+  border-radius: 12px;
 }
 
-.article-content h1 {
-  font-size: 22px;
-  margin-top: 10px;
+/* ——— کارت‌های مقالات مرتبط ——— */
+.related {
+  margin-top: 40px;
 }
 
-.article-content h2 {
-  color: #2563eb !important;
+.related h3 {
+  margin-bottom: 20px;
 }
 
-.main-header {
-  background: linear-gradient(135deg, #7dd3fc, #60a5fa, #8b5cf6);
-  color: #fff;
-  text-align: center;
-  padding: 35px 15px;
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
 }
 
-.search-box i svg {
-  width: 18px;
-  height: 18px;
-  stroke: #4b5563;
+.related .card {
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0,0,0,.05);
+}
+
+.related .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.related .card-body {
+  padding: 10px 12px;
+}
+
+.related .card-body h4 {
+  font-size: 15px;
+  margin: 0 0 4px;
+}
+
+.related .card-body p {
+  font-size: 13px;
+  color: #4b5563;
+  margin: 0;
 }
 </style>
 </head>
@@ -97,16 +100,17 @@
 <div class="container">
   <div class="article-content">
 
-    <!-- H1 / H2 اصلی مقاله -->
     <h1>خرید زیر لیوانی</h1>
     <h2>زیر لیوانی های جذاب</h2>
 
     <!-- تصویر مقاله -->
-    <img src="../images/zljazab.jpg" alt="زیر لیوانی های جذاب">
+    <img src="../images/zljazab.jpg" alt="خرید زیر لیوانی های جذاب"
+         class="article-hero">
 
     <p>
-      اگه دنبال خرید زیر لیوانی هستی، اینجا برات بهترین‌ها را از بهترین فروشگاه‌ها جدا کردیم.
-      می‌تونی مدل‌ها را از این لینک ببینی:
+      اگه دنبال خرید زیر لیوانی هستی خوب جایی آمدی.
+      ما برات از بهترین فروشگاه‌ها زیر لیوانی‌های جذاب و خوشگل را جدا کردیم.
+      میتونی از اینجا مدل های مختلف را ببینی:
     </p>
 
     <a
@@ -117,26 +121,46 @@
       دیدن مدل‌ها
     </a>
 
-    <hr>
+    <!-- ——— دیگر مقالات مرتبط ——— -->
+    <section class="related">
+      <h3>دیگر مقالات مرتبط</h3>
 
-    <!-- 👇 چند مقاله مرتبط با همین الگو (H1: خرید زیر لیوانی) -->
+      <div class="related-grid">
 
-    <h2>دیگر مقالات مرتبط</h2>
+        <a class="card" href="zlkhas.html">
+          <img src="../images/zlkhas.jpg" alt="زیر لیوانی های خاص">
+          <div class="card-body">
+            <h4>خرید زیر لیوانی</h4>
+            <p>زیر لیوانی های خاص</p>
+          </div>
+        </a>
 
-    <ul>
-      <li><a href="zlkhas.html">خرید زیر لیوانی — زیر لیوانی های خاص</a></li>
-      <li><a href="zlttc.html">خرید زیر لیوانی — طرح تبلیغ کلاسیک</a></li>
-      <li><a href="zltns1.html">خرید زیر لیوانی — طرح نقاشی set1</a></li>
-      <li><a href="zltns2.html">خرید زیر لیوانی — طرح نقاشی set2</a></li>
-      <li><a href="zltg.html">خرید زیر لیوانی — طرح قهوه</a></li>
-      <li><a href="zlts.html">خرید زیر لیوانی — طرح شعر</a></li>
-      <li><a href="zltss6.html">خرید زیر لیوانی — طرح شعر set6</a></li>
-      <li><a href="zltss7.html">خرید زیر لیوانی — طرح شعر set7</a></li>
-      <li><a href="zlkhass6.html">خرید زیر لیوانی — خاص set6</a></li>
-      <li><a href="zlkhass8.html">خرید زیر لیوانی — خاص set8</a></li>
-      <li><a href="zlkhass9.html">خرید زیر لیوانی — خاص set9</a></li>
-      <li><a href="zltf.html">خرید زیر لیوانی — طرح فیلم</a></li>
-    </ul>
+        <a class="card" href="zlttc.html">
+          <img src="../images/zlttc.jpg" alt="زیر لیوانی های طرح تبلیغ کلاسیک">
+          <div class="card-body">
+            <h4>خرید زیر لیوانی</h4>
+            <p>زیر لیوانی های طرح تبلیغ کلاسیک</p>
+          </div>
+        </a>
+
+        <a class="card" href="zltns1.html">
+          <img src="../images/zltns1.jpg" alt="زیر لیوانی های طرح نقاشی set1">
+          <div class="card-body">
+            <h4>خرید زیر لیوانی</h4>
+            <p>زیر لیوانی های طرح نقاشی set۱</p>
+          </div>
+        </a>
+
+        <a class="card" href="zltf.html">
+          <img src="../images/zltf.jpg" alt="زیر لیوانی های طرح فیلم">
+          <div class="card-body">
+            <h4>خرید زیر لیوانی</h4>
+            <p>زیر لیوانی های طرح فیلم</p>
+          </div>
+        </a>
+
+      </div>
+    </section>
 
   </div>
 </div>
