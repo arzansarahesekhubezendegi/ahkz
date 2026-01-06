@@ -1,0 +1,15 @@
+const allArticles = [
+  {title: "خرید زیر لیوانی", desc: "زیر لیوانی های جذاب", link: "zljazab.html", image: "zljazab.jpg"},
+  {title: "خرید زیر لیوانی", desc: "زیر لیوانی های خاص", link: "zlkhas.html", image: "zlkhas.jpg"},
+  {title: "خرید زیر لیوانی", desc: "زیر لیوانی های طرح تبلیغ کلاسیک", link: "zlttc.html", image: "zlttc.jpg"},
+  {title: "خرید زیر لیوانی", desc: "زیر لیوانی های طرح نقاشی set1", link: "zltns1.html", image: "zltns1.jpg"},
+  {title: "خرید زیر لیوانی", desc: "زیر لیوانی های طرح نقاشی set2", link: "zltns2.html", image: "zltns2.jpg"},
+  {title: "خرید زیر لیوانی", desc: "زیر لیوانی های طرح قهوه", link: "zltg.html", image: "zltg.jpg"},
+  {title: "خرید زیر لیوانی", desc: "زیر لیوانی های طرح شعر", link: "zlts.html", image: "zlts.jpg"},
+  {title: "خرید زیر لیوانی", desc: "زیر لیوانی های طرح شعر set6", link: "zltss6.html", image: "zltss6.jpg"},
+  {title: "خرید زیر لیوانی", desc: "زیر لیوانی های طرح شعر set7", link: "zltss7.html", image: "zltss7.jpg"},
+  {title: "خرید زیر لیوانی", desc: "زیر لیوانی های خاص set6", link: "zlkhass6.html", image: "zlkhass6.jpg"},
+  {title: "خرید زیر لیوانی", desc: "زیر لیوانی های خاص set8", link: "zlkhass8.html", image: "zlkhass8.jpg"},
+  {title: "خرید زیر لیوانی", desc: "زیر لیوانی های خاص set9", link: "zlkhass9.html", image: "zlkhass9.jpg"},
+  {title: "خرید زیر لیوانی", desc: "زیر لیوانی های طرح فیلم", link: "zltf.html", image: "zltf.jpg"},
+];
