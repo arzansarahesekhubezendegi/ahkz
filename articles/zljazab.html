@@ -51,6 +51,8 @@
   border-radius: 14px;
   overflow: hidden;
   box-shadow: 0 8px 18px rgba(0,0,0,.05);
+  text-decoration: none;
+  color: inherit;
 }
 .related .card img {
   width: 100%;
@@ -101,7 +103,7 @@
     <li><a href="../blog.html" class="active">مقالات</a></li>
     <li><a href="mailto:arzansarahesekhubezendegi@gmail.com">ارتباط با ما</a></li>
     <li>
-      <form class="search-box" onsubmit="return false;">
+      <form class="search-box" onsubmit="return false;" style="position:relative;">
         <i>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path d="M21 21l-4.35-4.35m2.1-5.4a7.5 7.5 0 11-15 0 7.5 7.5 0 0115 0z"
@@ -148,6 +150,7 @@
 
 <script src="/articles.js"></script>
 <script>
+// ——— جستجو در همه مقالات ———
 function searchArticles() {
   const query = document.getElementById("searchInput").value.toLowerCase();
   const resultsList = document.getElementById("searchResults");
@@ -171,10 +174,12 @@ function searchArticles() {
   resultsList.style.display = 'block';
 }
 
-// نمایش مقالات مرتبط بر اساس H1 (خرید زیر لیوانی)
+// ——— نمایش مقالات مرتبط بر اساس H1 ———
 function loadRelatedArticles() {
   const relatedContainer = document.getElementById("relatedArticles");
-  const related = articles.filter(a => a.h1 === 'خرید زیر لیوانی' && a.url !== window.location.pathname.split('/').pop());
+  const currentFile = window.location.pathname.split('/').pop();
+  const related = articles.filter(a => a.h1 === 'خرید زیر لیوانی' && a.url !== currentFile);
+
   related.forEach(a => {
     const card = document.createElement('a');
     card.className = 'card';
