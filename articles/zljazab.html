@@ -30,27 +30,10 @@
   color: #ffffff !important;
 }
 
-/* ===== H2 و H3 ===== */
+/* ===== تیترها ===== */
 .article-content h2,
 .article-content h3 {
   color: #2563eb !important;
-  background: none !important;
-  -webkit-text-fill-color: initial !important;
-}
-
-/* ===== هدر صفحه ===== */
-.main-header {
-  background: linear-gradient(135deg, #7dd3fc, #60a5fa, #8b5cf6);
-  color: #fff;
-  text-align: center;
-  padding: 35px 15px;
-}
-
-/* ===== آیکن ذره‌بین ===== */
-.search-box i svg {
-  width: 18px;
-  height: 18px;
-  stroke: #4b5563;
 }
 
 /* ===== تصاویر مقاله ===== */
@@ -62,40 +45,60 @@
   border-radius: 12px;
 }
 
-/* ===== کارت‌های مقالات مرتبط ===== */
-.related {
+/* ===== کارت‌های مقالات مرتبط (گرید) ===== */
+.related-container {
   margin-top: 40px;
 }
-.related h3 {
-  margin-bottom: 20px;
+.related-container .article-card {
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 4px 10px rgba(0,0,0,.05);
+  overflow:hidden;
+  text-align:center;
+  margin-bottom:20px;
+  transition: transform .2s ease, box-shadow .2s ease;
 }
+.related-container .article-card:hover {
+  transform: translateY(-3px);
+  box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+.related-container .article-card img {
+  width:100%;
+  max-height:200px;
+  object-fit:cover;
+  display:block;
+}
+.related-container .article-card h3 {
+  color:#0f172a;
+  margin:10px 0 3px;
+  font-size:18px;
+  font-weight:900;
+}
+.related-container .article-card p {
+  margin:0 0 10px;
+  font-size:14px;
+  color:#334155;
+}
+.related-container .read-btn {
+  display:inline-block;
+  margin-bottom:15px;
+  padding:10px 18px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:700;
+  color:#fff;
+  background: linear-gradient(135deg, #38bdf8, #8b5cf6);
+  transition: all .2s ease;
+}
+.related-container .read-btn:hover {
+  background: linear-gradient(135deg, #0ea5e9, #7c3aed);
+}
+
+/* ===== گرید ===== */
 .related-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 16px;
-}
-.related .card {
-  background: #ffffff;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 8px 18px rgba(0,0,0,.05);
-}
-.related .card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-.related .card-body {
-  padding: 10px 12px;
-}
-.related .card-body h4 {
-  font-size: 15px;
-  margin: 0 0 4px;
-}
-.related .card-body p {
-  font-size: 13px;
-  color: #4b5563;
-  margin: 0;
+  display:grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  gap:20px;
 }
 </style>
 </head>
@@ -133,69 +136,118 @@
     <h1>خرید زیر لیوانی</h1>
     <h2>زیر لیوانی های جذاب</h2>
     <img src="../images/zljazab.jpg" alt="خرید زیر لیوانی های جذاب" class="article-hero">
-    <p>اگه دنبال خرید زیر لیوانی هستی خوب جایی آمدی. ما برات از بهترین فروشگاه‌ها زیر لیوانی‌های جذاب و خوشگل را جدا کردیم. میتونی از اینجا مدل های مختلف را ببینی:</p>
-    <a class="model-link" href="https://publisher.affilio.ir//landings/019b6fd8-4cfd-7848-b100-63400dc1cb68" target="_blank" rel="nofollow noopener">دیدن مدل‌ها</a>
+    <p>
+      اگه دنبال خرید زیر لیوانی هستی خوب جایی آمدی.
+      ما برات از بهترین فروشگاه‌ها زیر لیوانی‌های جذاب و خوشگل را جدا کردیم.
+      میتونی از اینجا مدل های مختلف را ببینی:
+    </p>
+    <a class="model-link" href="https://publisher.affilio.ir//landings/019b6fd8-4cfd-7848-b100-63400dc1cb68" target="_blank" rel="nofollow noopener">
+      دیدن مدل‌ها
+    </a>
 
-    <!-- مقالات زیر مقاله اصلی -->
-    <h1>خرید زیر لیوانی</h1>
-    <h2>زیر لیوانی های خاص</h2>
-    <img src="../images/zlkhas.jpg" alt="زیر لیوانی های خاص" class="article-hero">
-    <a class="model-link" href="https://publisher.affilio.ir//landings/yourlink2" target="_blank" rel="nofollow noopener">دیدن مدل‌ها</a>
+    <!-- بخش مقالات مرتبط -->
+    <div class="related-container">
+      <h2>مقالات مرتبط</h2>
+      <div class="related-grid">
 
-    <h1>خرید زیر لیوانی</h1>
-    <h2>زیر لیوانی های طرح تبلیغ کلاسیک</h2>
-    <img src="../images/zlttc.jpg" alt="زیر لیوانی های طرح تبلیغ کلاسیک" class="article-hero">
-    <a class="model-link" href="https://publisher.affilio.ir//landings/yourlink3" target="_blank" rel="nofollow noopener">دیدن مدل‌ها</a>
+        <!-- کارت ۱ -->
+        <div class="article-card">
+          <img src="../images/zlkhas.jpg" alt="زیر لیوانی های خاص">
+          <h3>خرید زیر لیوانی</h3>
+          <p>زیر لیوانی های خاص</p>
+          <a class="read-btn" href="zlkhas.html">مطالعه</a>
+        </div>
 
-    <h1>خرید زیر لیوانی</h1>
-    <h2>زیر لیوانی های طرح نقاشی set۱</h2>
-    <img src="../images/zltns1.jpg" alt="زیر لیوانی های طرح نقاشی set۱" class="article-hero">
-    <a class="model-link" href="https://publisher.affilio.ir//landings/yourlink4" target="_blank" rel="nofollow noopener">دیدن مدل‌ها</a>
+        <!-- کارت ۲ -->
+        <div class="article-card">
+          <img src="../images/zlttc.jpg" alt="زیر لیوانی های طرح تبلیغ کلاسیک">
+          <h3>خرید زیر لیوانی</h3>
+          <p>زیر لیوانی های طرح تبلیغ کلاسیک</p>
+          <a class="read-btn" href="zlttc.html">مطالعه</a>
+        </div>
 
-    <h1>خرید زیر لیوانی</h1>
-    <h2>زیر لیوانی های طرح نقاشی set۲</h2>
-    <img src="../images/zltns2.jpg" alt="زیر لیوانی های طرح نقاشی set۲" class="article-hero">
-    <a class="model-link" href="https://publisher.affilio.ir//landings/yourlink5" target="_blank" rel="nofollow noopener">دیدن مدل‌ها</a>
+        <!-- کارت ۳ -->
+        <div class="article-card">
+          <img src="../images/zltns1.jpg" alt="زیر لیوانی های طرح نقاشی set۱">
+          <h3>خرید زیر لیوانی</h3>
+          <p>زیر لیوانی های طرح نقاشی set۱</p>
+          <a class="read-btn" href="zltns1.html">مطالعه</a>
+        </div>
 
-    <h1>خرید زیر لیوانی</h1>
-    <h2>زیر لیوانی های طرح قهوه</h2>
-    <img src="../images/zltg.jpg" alt="زیر لیوانی های طرح قهوه" class="article-hero">
-    <a class="model-link" href="https://publisher.affilio.ir//landings/yourlink6" target="_blank" rel="nofollow noopener">دیدن مدل‌ها</a>
+        <!-- کارت ۴ -->
+        <div class="article-card">
+          <img src="../images/zltns2.jpg" alt="زیر لیوانی های طرح نقاشی set۲">
+          <h3>خرید زیر لیوانی</h3>
+          <p>زیر لیوانی های طرح نقاشی set۲</p>
+          <a class="read-btn" href="zltns2.html">مطالعه</a>
+        </div>
 
-    <h1>خرید زیر لیوانی</h1>
-    <h2>زیر لیوانی های طرح شعر</h2>
-    <img src="../images/zlts.jpg" alt="زیر لیوانی های طرح شعر" class="article-hero">
-    <a class="model-link" href="https://publisher.affilio.ir//landings/yourlink7" target="_blank" rel="nofollow noopener">دیدن مدل‌ها</a>
+        <!-- کارت ۵ -->
+        <div class="article-card">
+          <img src="../images/zltg.jpg" alt="زیر لیوانی های طرح قهوه">
+          <h3>خرید زیر لیوانی</h3>
+          <p>زیر لیوانی های طرح قهوه</p>
+          <a class="read-btn" href="zltg.html">مطالعه</a>
+        </div>
 
-    <h1>خرید زیر لیوانی</h1>
-    <h2>زیر لیوانی های طرح شعر set۶</h2>
-    <img src="../images/zltss6.jpg" alt="زیر لیوانی های طرح شعر set۶" class="article-hero">
-    <a class="model-link" href="https://publisher.affilio.ir//landings/yourlink8" target="_blank" rel="nofollow noopener">دیدن مدل‌ها</a>
+        <!-- کارت ۶ -->
+        <div class="article-card">
+          <img src="../images/zlts.jpg" alt="زیر لیوانی های طرح شعر">
+          <h3>خرید زیر لیوانی</h3>
+          <p>زیر لیوانی های طرح شعر</p>
+          <a class="read-btn" href="zlts.html">مطالعه</a>
+        </div>
 
-    <h1>خرید زیر لیوانی</h1>
-    <h2>زیر لیوانی های طرح شعر set۷</h2>
-    <img src="../images/zltss7.jpg" alt="زیر لیوانی های طرح شعر set۷" class="article-hero">
-    <a class="model-link" href="https://publisher.affilio.ir//landings/yourlink9" target="_blank" rel="nofollow noopener">دیدن مدل‌ها</a>
+        <!-- کارت ۷ -->
+        <div class="article-card">
+          <img src="../images/zltss6.jpg" alt="زیر لیوانی های طرح شعر set۶">
+          <h3>خرید زیر لیوانی</h3>
+          <p>زیر لیوانی های طرح شعر set۶</p>
+          <a class="read-btn" href="zltss6.html">مطالعه</a>
+        </div>
 
-    <h1>خرید زیر لیوانی</h1>
-    <h2>زیر لیوانی های خاص set۶</h2>
-    <img src="../images/zlkhass6.jpg" alt="زیر لیوانی های خاص set۶" class="article-hero">
-    <a class="model-link" href="https://publisher.affilio.ir//landings/yourlink10" target="_blank" rel="nofollow noopener">دیدن مدل‌ها</a>
+        <!-- کارت ۸ -->
+        <div class="article-card">
+          <img src="../images/zltss7.jpg" alt="زیر لیوانی های طرح شعر set۷">
+          <h3>خرید زیر لیوانی</h3>
+          <p>زیر لیوانی های طرح شعر set۷</p>
+          <a class="read-btn" href="zltss7.html">مطالعه</a>
+        </div>
 
-    <h1>خرید زیر لیوانی</h1>
-    <h2>زیر لیوانی های خاص set۸</h2>
-    <img src="../images/zlkhass8.jpg" alt="زیر لیوانی های خاص set۸" class="article-hero">
-    <a class="model-link" href="https://publisher.affilio.ir//landings/yourlink11" target="_blank" rel="nofollow noopener">دیدن مدل‌ها</a>
+        <!-- کارت ۹ -->
+        <div class="article-card">
+          <img src="../images/zlkhass6.jpg" alt="زیر لیوانی های خاص set۶">
+          <h3>خرید زیر لیوانی</h3>
+          <p>زیر لیوانی های خاص set۶</p>
+          <a class="read-btn" href="zlkhass6.html">مطالعه</a>
+        </div>
 
-    <h1>خرید زیر لیوانی</h1>
-    <h2>زیر لیوانی های خاص set۹</h2>
-    <img src="../images/zlkhass9.jpg" alt="زیر لیوانی های خاص set۹" class="article-hero">
-    <a class="model-link" href="https://publisher.affilio.ir//landings/yourlink12" target="_blank" rel="nofollow noopener">دیدن مدل‌ها</a>
+        <!-- کارت ۱۰ -->
+        <div class="article-card">
+          <img src="../images/zlkhass8.jpg" alt="زیر لیوانی های خاص set۸">
+          <h3>خرید زیر لیوانی</h3>
+          <p>زیر لیوانی های خاص set۸</p>
+          <a class="read-btn" href="zlkhass8.html">مطالعه</a>
+        </div>
 
-    <h1>خرید زیر لیوانی</h1>
-    <h2>زیر لیوانی های طرح فیلم</h2>
-    <img src="../images/zltf.jpg" alt="زیر لیوانی های طرح فیلم" class="article-hero">
-    <a class="model-link" href="https://publisher.affilio.ir//landings/yourlink13" target="_blank" rel="nofollow noopener">دیدن مدل‌ها</a>
+        <!-- کارت ۱۱ -->
+        <div class="article-card">
+          <img src="../images/zlkhass9.jpg" alt="زیر لیوانی های خاص set۹">
+          <h3>خرید زیر لیوانی</h3>
+          <p>زیر لیوانی های خاص set۹</p>
+          <a class="read-btn" href="zlkhass9.html">مطالعه</a>
+        </div>
+
+        <!-- کارت ۱۲ -->
+        <div class="article-card">
+          <img src="../images/zltf.jpg" alt="زیر لیوانی های طرح فیلم">
+          <h3>خرید زیر لیوانی</h3>
+          <p>زیر لیوانی های طرح فیلم</p>
+          <a class="read-btn" href="zltf.html">مطالعه</a>
+        </div>
+
+      </div>
+    </div>
 
   </div>
 </div>
@@ -207,7 +259,7 @@
 <script>
 function searchArticles() {
   const input = document.getElementById("searchInput").value.toLowerCase();
-  const cards = document.querySelectorAll(".card");
+  const cards = document.querySelectorAll(".article-card");
   cards.forEach(card => {
     const text = card.innerText.toLowerCase();
     card.style.display = text.includes(input) ? "block" : "none";
