@@ -3,18 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>مقالات سایت</title>
 
-  <meta name="description" content="لیست آخرین مقالات سایت با دسته‌بندی و جستجو" />
+  <title>لیست مقالات</title>
+  <meta name="description" content="آخرین مقالات و معرفی محصولات خاص" />
 
   <link rel="stylesheet" href="style.css" />
 
   <style>
     body {
       font-family: sans-serif;
-      background: #f7f7f7;
+      background: #f4f4f4;
       margin: 0;
-      padding: 0;
     }
 
     header {
@@ -25,7 +24,7 @@
 
     header h1 {
       margin: 0;
-      font-size: 20px;
+      font-size: 19px;
     }
 
     .container {
@@ -35,27 +34,27 @@
     }
 
     .search-box {
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     .search-box input {
       width: 100%;
       padding: 10px;
-      font-size: 15px;
+      font-size: 14px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
     }
 
     .card {
       background: #fff;
       border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,.08);
+      box-shadow: 0 4px 14px rgba(0,0,0,.08);
       overflow: hidden;
-      transition: .2s;
+      transition: .25s;
     }
 
     .card:hover {
@@ -64,25 +63,25 @@
 
     .card img {
       width: 100%;
-      height: 180px;
+      height: 170px;
       object-fit: cover;
     }
 
     .card-content {
-      padding: 10px 12px 15px;
+      padding: 12px;
     }
 
     .card-content h3 {
-      font-size: 15px;
-      margin: 8px 0 12px;
+      margin: 6px 0 12px;
+      font-size: 14px;
       line-height: 1.6;
     }
 
     .card-content a {
       display: inline-block;
+      color: #0b63ff;
       text-decoration: none;
-      color: #0c63ff;
-      font-size: 14px;
+      font-size: 13px;
     }
   </style>
 </head>
@@ -101,17 +100,111 @@
 
   <div id="articlesList" class="grid">
 
-    <!-- نمونه کارت مقاله — همین ساختار را تکرار کن -->
-    <div class="card" data-title="خرید زیر لیوانی">
-      <img src="images/zlkhass6.jpg" alt="خرید زیر لیوانی" />
+    <!-- هر کارت یک مقاله -->
+
+    <div class="card" data-title="zljazab">
+      <img src="images/zljazab.jpg" alt="zljazab">
       <div class="card-content">
-        <h3>خرید زیر لیوانی — خاص ترین مدل‌ها</h3>
+        <h3>zljazab</h3>
+        <a href="articles/zljazab.html">مشاهده مقاله</a>
+      </div>
+    </div>
+
+    <div class="card" data-title="zltg">
+      <img src="images/zltg.jpg" alt="zltg">
+      <div class="card-content">
+        <h3>zltg</h3>
+        <a href="articles/zltg.html">مشاهده مقاله</a>
+      </div>
+    </div>
+
+    <div class="card" data-title="zltns1">
+      <img src="images/zltns1.jpg" alt="zltns1">
+      <div class="card-content">
+        <h3>zltns1</h3>
+        <a href="articles/zltns1.html">مشاهده مقاله</a>
+      </div>
+    </div>
+
+    <div class="card" data-title="zltns2">
+      <img src="images/zltns2.jpg" alt="zltns2">
+      <div class="card-content">
+        <h3>zltns2</h3>
+        <a href="articles/zltns2.html">مشاهده مقاله</a>
+      </div>
+    </div>
+
+    <div class="card" data-title="zlkhas">
+      <img src="images/zlkhas.jpg" alt="zlkhas">
+      <div class="card-content">
+        <h3>zlkhas</h3>
+        <a href="articles/zlkhas.html">مشاهده مقاله</a>
+      </div>
+    </div>
+
+    <div class="card" data-title="zlttc">
+      <img src="images/zlttc.jpg" alt="zlttc">
+      <div class="card-content">
+        <h3>zlttc</h3>
+        <a href="articles/zlttc.html">مشاهده مقاله</a>
+      </div>
+    </div>
+
+    <div class="card" data-title="zlkhass6">
+      <img src="images/zlkhass6.jpg" alt="zlkhass6">
+      <div class="card-content">
+        <h3>zlkhass6</h3>
         <a href="articles/zlkhass6.html">مشاهده مقاله</a>
       </div>
     </div>
 
-    <!-- مقالات دیگر... -->
-    <!-- هر مقاله جدید → بالای لیست اضافه شود -->
+    <div class="card" data-title="zlkhass8">
+      <img src="images/zlkhass8.jpg" alt="zlkhass8">
+      <div class="card-content">
+        <h3>zlkhass8</h3>
+        <a href="articles/zlkhass8.html">مشاهده مقاله</a>
+      </div>
+    </div>
+
+    <div class="card" data-title="zlkhass9">
+      <img src="images/zlkhass9.jpg" alt="zlkhass9">
+      <div class="card-content">
+        <h3>zlkhass9</h3>
+        <a href="articles/zlkhass9.html">مشاهده مقاله</a>
+      </div>
+    </div>
+
+    <div class="card" data-title="zltf">
+      <img src="images/zltf.jpg" alt="zltf">
+      <div class="card-content">
+        <h3>zltf</h3>
+        <a href="articles/zltf.html">مشاهده مقاله</a>
+      </div>
+    </div>
+
+    <div class="card" data-title="zlts">
+      <img src="images/zlts.jpg" alt="zlts">
+      <div class="card-content">
+        <h3>zlts</h3>
+        <a href="articles/zlts.html">مشاهده مقاله</a>
+      </div>
+    </div>
+
+    <div class="card" data-title="zltss6">
+      <img src="images/zltss6.jpg" alt="zltss6">
+      <div class="card-content">
+        <h3>zltss6</h3>
+        <a href="articles/zltss6.html">مشاهده مقاله</a>
+      </div>
+    </div>
+
+    <div class="card" data-title="zltss7">
+      <img src="images/zltss7.jpg" alt="zltss7">
+      <div class="card-content">
+        <h3>zltss7</h3>
+        <a href="articles/zltss7.html">مشاهده مقاله</a>
+      </div>
+    </div>
 
   </div>
 </div>
@@ -124,7 +217,7 @@
     const value = this.value.toLowerCase();
     cards.forEach(card => {
       const title = card.getAttribute("data-title").toLowerCase();
-      card.style.display = title.includes(value) ? "block" : "none";
+      card.style.display = title.includes(value) ? "" : "none";
     });
   });
 </script>
