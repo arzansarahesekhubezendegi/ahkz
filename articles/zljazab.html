@@ -12,14 +12,13 @@
 <link rel="stylesheet" href="../assets/style.css?v=2">
 
 <style>
-/* ——— دکمه دیدن مدل‌ها ——— */
 .model-link {
   display: block;
   width: fit-content;
   margin: 20px auto;
   text-align: center;
   background: linear-gradient(135deg, #38bdf8, #8b5cf6);
-  color: #ffffff !important; /* این‌جا با !important الزامی */
+  color: #ffffff !important;
   padding: 10px 18px;
   border-radius: 8px;
   text-decoration: none;
@@ -28,18 +27,26 @@
 }
 .model-link:hover {
   background: linear-gradient(135deg, #0ea5e9, #7c3aed);
-  color: #ffffff !important; /* حتما در حالت هاور هم سفید */
+  color: #ffffff !important;
 }
 
-/* ——— رنگ تیترهای H2 و H3 ——— */
-.article-content h2,
-.article-content h3 {
-  color: #2563eb !important; /* آبی */
-  background: none !important;
-  -webkit-text-fill-color: initial !important;
+.article-content img {
+  max-width: 450px;
+  width: 100%;
+  border-radius: 14px;
+  display: block;
+  margin: 15px auto 25px;
 }
 
-/* ——— هدر صفحه ——— */
+.article-content h1 {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.article-content h2 {
+  color: #2563eb !important;
+}
+
 .main-header {
   background: linear-gradient(135deg, #7dd3fc, #60a5fa, #8b5cf6);
   color: #fff;
@@ -47,7 +54,6 @@
   padding: 35px 15px;
 }
 
-/* ——— آیکن ذره‌بین ——— */
 .search-box i svg {
   width: 18px;
   height: 18px;
@@ -72,7 +78,6 @@
     <li>
       <form class="search-box" onsubmit="return false;">
         <i>
-          <!-- آیکن واقعی -->
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path d="M21 21l-4.35-4.35m2.1-5.4a7.5 7.5 0 11-15 0 7.5 7.5 0 0115 0z"
               fill="none" stroke="#4b5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -91,13 +96,17 @@
 
 <div class="container">
   <div class="article-content">
-    <h2>خرید زیر لیوانی</h2>
-    <h3>زیر لیوانی های جذاب</h3>
+
+    <!-- H1 / H2 اصلی مقاله -->
+    <h1>خرید زیر لیوانی</h1>
+    <h2>زیر لیوانی های جذاب</h2>
+
+    <!-- تصویر مقاله -->
+    <img src="../images/zljazab.jpg" alt="زیر لیوانی های جذاب">
 
     <p>
-      اگه دنبال خرید زیر لیوانی هستی خوب جایی آمدی.
-      ما برات از بهترین فروشگاه‌ها زیر لیوانی‌های جذاب و خوشگل را جدا کردیم.
-      میتونی از اینجا مدل های مختلف را ببینی:
+      اگه دنبال خرید زیر لیوانی هستی، اینجا برات بهترین‌ها را از بهترین فروشگاه‌ها جدا کردیم.
+      می‌تونی مدل‌ها را از این لینک ببینی:
     </p>
 
     <a
@@ -107,6 +116,28 @@
       rel="nofollow noopener">
       دیدن مدل‌ها
     </a>
+
+    <hr>
+
+    <!-- 👇 چند مقاله مرتبط با همین الگو (H1: خرید زیر لیوانی) -->
+
+    <h2>دیگر مقالات مرتبط</h2>
+
+    <ul>
+      <li><a href="zlkhas.html">خرید زیر لیوانی — زیر لیوانی های خاص</a></li>
+      <li><a href="zlttc.html">خرید زیر لیوانی — طرح تبلیغ کلاسیک</a></li>
+      <li><a href="zltns1.html">خرید زیر لیوانی — طرح نقاشی set1</a></li>
+      <li><a href="zltns2.html">خرید زیر لیوانی — طرح نقاشی set2</a></li>
+      <li><a href="zltg.html">خرید زیر لیوانی — طرح قهوه</a></li>
+      <li><a href="zlts.html">خرید زیر لیوانی — طرح شعر</a></li>
+      <li><a href="zltss6.html">خرید زیر لیوانی — طرح شعر set6</a></li>
+      <li><a href="zltss7.html">خرید زیر لیوانی — طرح شعر set7</a></li>
+      <li><a href="zlkhass6.html">خرید زیر لیوانی — خاص set6</a></li>
+      <li><a href="zlkhass8.html">خرید زیر لیوانی — خاص set8</a></li>
+      <li><a href="zlkhass9.html">خرید زیر لیوانی — خاص set9</a></li>
+      <li><a href="zltf.html">خرید زیر لیوانی — طرح فیلم</a></li>
+    </ul>
+
   </div>
 </div>
 
